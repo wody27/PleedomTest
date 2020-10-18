@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { bg2_2, left_button, right_button } from '../images';
+import { bg2_2, left_button, right_button } from '../../images';
 
 export default function Page2_2() {
   return (
