@@ -1,5 +1,5 @@
-export { default as bg_guide } from './bg-guide.png';
-export { default as bg_start } from './bg.png';
+export { default as bg_start } from './bg-start.png';
+export { default as bg0 } from './0.png';
 export { default as left_button } from './left-button.svg';
 export { default as right_button } from './right-button.svg';
 export { default as bg2_2 } from './2-2.png';
