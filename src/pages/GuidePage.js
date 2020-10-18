@@ -11,7 +11,7 @@ export default function GuidePage() {
       <Link to="/">
         <LeftButton src={left_button} alt="left" />
       </Link>
-      <Link to="/2-2">
+      <Link to="/1">
         <RightButton src={right_button} alt="right" />
       </Link>
     </Wrapper>

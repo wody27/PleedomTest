@@ -8,8 +8,8 @@ export default function App() {
   return (
     <Wrapper>
       <Route exact path="/" component={StartPage} />
-      <Route path="/guide" component={GuidePage} />
-      <Route path="/2-2" component={Page2_2} />
+      <Route path="/0" component={GuidePage} />
+      <Route path="/1" component={Page2_2} />
       {/* <Route path="/1-2" component={} />
       <Route path="/1-3" component={} />
       <Route path="/2-1" component={} />

@@ -1,19 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-import { bg2_2, left_button, right_button } from '../../images';
+import { bg2_2 } from '../../images';
+import PageButton from '../../components/PageButton';
 
-export default function Page2_2() {
+export default function Page2_2({ match }) {
   return (
     <Wrapper>
       <Img src={bg2_2} alt="background" />
-      <Link to="/guide">
-        <LeftButton src={left_button} alt="left" />
-      </Link>
-      <Link to="/">
-        <RightButton src={right_button} alt="right" />
-      </Link>
+      <PageButton pageNumber={match.url} />
     </Wrapper>
   );
 }

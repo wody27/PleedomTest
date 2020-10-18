@@ -7,7 +7,7 @@ import { bg_start } from '../images';
 export default function StartPage() {
   return (
     <Wrapper>
-      <Link to="/guide">
+      <Link to="/0">
         <NextButton>시작하기</NextButton>
       </Link>
       <Img src={bg_start} alt="background" />
