@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { bg_guide, left_button, right_button } from '../images';
+import { bg2_2, left_button, right_button } from '../images';
 
-export default function GuidePage() {
+export default function Page2_2() {
   return (
     <Wrapper>
-      <Img src={bg_guide} alt="background" />
-      <Link to="/">
+      <Img src={bg2_2} alt="background" />
+      <Link to="/guide">
         <LeftButton src={left_button} alt="left" />
       </Link>
-      <Link to="/2-2">
+      <Link to="/">
         <RightButton src={right_button} alt="right" />
       </Link>
     </Wrapper>

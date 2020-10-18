@@ -1,3 +1,3 @@
-export { default as StartPage } from './GuidePage';
-export { default as GuidePage } from './StartPage';
-// export { default as page2_2 } from './Page2_2';
+export { default as StartPage } from './StartPage';
+export { default as GuidePage } from './GuidePage';
+export { default as Page2_2 } from './Page2_2';
