@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <clipPath id="clip-path">
+            <path d="M0 0H24V24H0z" class="cls-1"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:none}
+        </style>
+    </defs>
+    <g id="buttons_square_gray" transform="translate(-275 -428)">
+        <path id="bg" d="M0 0H48V48H0z" class="cls-1" transform="translate(275 428)"/>
+        <g id="icons_back-light" clip-path="url(#clip-path)" transform="translate(287 440)">
+            <path id="bg-2" d="M0 0H24V24H0z" class="cls-1"/>
+            <path id="icon" fill="#fff" d="M6.241 13.29L.361 7.411A.751.751 0 0 1 .1 6.393a.749.749 0 0 1 .211-.245L6.241.22A.75.75 0 0 1 7.3 1.28L2.563 6.019h12.688a.75.75 0 0 1 0 1.5H2.592L7.3 12.23a.75.75 0 1 1-1.061 1.06z" transform="translate(4 5.231)"/>
+        </g>
+    </g>
+</svg>
