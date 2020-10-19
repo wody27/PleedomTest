@@ -7,7 +7,7 @@ import Background from '../components/Background';
 export default function StartPage() {
   return (
     <Wrapper>
-      <Link to="/0">
+      <Link to="/0?score=0">
         <NextButton>시작하기</NextButton>
       </Link>
       <Background page="start" />

@@ -5,12 +5,12 @@ import queryString from 'query-string';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 
-export default function Page2_4({ match, location }) {
+export default function Page6_1({ match, location }) {
   const query = queryString.parse(location.search);
 
   return (
     <Wrapper>
-      <Background page="2_4" />
+      <Background page="6_1" />
       <PageButton pageNumber={match.url} selectedScore={query.score} />
     </Wrapper>
   );

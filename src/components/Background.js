@@ -1,7 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { bg_start, bg0, bg2_2, bg2_3, bg2_4, bg2_5 } from '../images';
+import {
+  bg_start,
+  bg0,
+  bg2_2,
+  bg2_3,
+  bg2_4,
+  bg2_5,
+  bg3_1,
+  bg3_2,
+  bg3_3,
+  bg4_1,
+  bg5_1,
+  bg5_2,
+  bg6_1,
+  bg6_2,
+} from '../images';
 
 export default function Background({ page }) {
   switch (page) {
@@ -25,6 +40,24 @@ export default function Background({ page }) {
       return <Img src={bg2_4} alt="" />;
     case '2_5':
       return <Img src={bg2_5} alt="" />;
+    case '3_1':
+      return <Img src={bg3_1} alt="" />;
+    case '3_2':
+      return <Img src={bg3_2} alt="" />;
+    case '3_3':
+      return <Img src={bg3_3} alt="" />;
+    case '4_1':
+      return <Img src={bg4_1} alt="" />;
+    case '5_1':
+      return <Img src={bg5_1} alt="" />;
+    case '5_2':
+      return <Img src={bg5_2} alt="" />;
+    case '6_1':
+      return <Img src={bg6_1} alt="" />;
+    case '6_2':
+      return <Img src={bg6_2} alt="" />;
+    case '6_3':
+      return <Img src={bg6_2} alt="" />;
     default:
       return <Img src="bg_start" alt="" />;
   }
