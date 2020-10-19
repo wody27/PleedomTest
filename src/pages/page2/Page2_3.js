@@ -7,41 +7,52 @@ import PageButton from '../../components/PageButton';
 export default function Page2_3({ match }) {
   const [selected, setSelected] = useState(-1);
 
-  const select = (event) => {
-    setSelected(1);
-  };
   return (
     <Wrapper>
       <Background page="2_3" />
       <PageButton pageNumber={match.url} />
-      <Answer isSelected={selected === 1 ? true : false} onClick={select}>
-        엄청 크고 매끄러운 촉감이 느껴져..!
-        <br />
-        인터넷에서 봤던 타조알의 특징과 비슷하군 <br />
-        혹시 타조 알,,,?
-      </Answer>
-      {/* <Answer isSelected={selected === 1 ? true : false} onClick={select}>
-        엄청 크고 매끄러운 촉감이 느껴져..!
-        <br />
-        인터넷에서 봤던 타조알의 특징과 비슷하군 <br />
-        혹시 타조 알,,,?
-      </Answer> */}
+      <VStack>
+        <Answer
+          isSelected={selected === 1 ? true : false}
+          onClick={() => {
+            setSelected(1);
+          }}
+        >
+          엄청 크고 매끄러운 촉감이 느껴져..! <br />
+          인터넷에서 봤던 타조알의 특징과 비슷하군 <br />
+          혹시 타조 알,,,?
+        </Answer>
+        <Answer
+          isSelected={selected === 2 ? true : false}
+          onClick={() => {
+            setSelected(2);
+          }}
+        >
+          알에서 뭐가 나올까? <br />
+          설마 공룡이 나와서 날 공격하는건 아니겠지? <br />
+          우리 집을 부수는 건 아니겠지?
+        </Answer>
+      </VStack>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div``;
 
-const Answer = styled.div`
+const VStack = styled.div`
   position: absolute;
   top: 179px;
   left: 16px;
   right: 16px;
-
   z-index: 4;
 
-  padding: 14px 21px;
+  display: flex;
+  flex-direction: column;
+`;
 
+const Answer = styled.div`
+  padding: 14px 21px;
+  margin-bottom: 12px;
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.08);
 
