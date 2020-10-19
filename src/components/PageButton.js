@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { left_button, right_button } from '../images';
 
-export default function PageButton({ pageNumber }) {
+export default function PageButton({ pageNumber, selectedScore }) {
   const page = pageNumber.replace('/', '');
-  const prevPage = `/${parseInt(page) - 1}`;
-  const nextPage = `/${parseInt(page) + 1}`;
+  const prevPage = `/${parseInt(page) - 1}?score=${selectedScore}`;
+  const nextPage = `/${parseInt(page) + 1}?score=${selectedScore}`;
 
   return (
     <Fragment>

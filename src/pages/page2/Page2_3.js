@@ -11,7 +11,7 @@ export default function Page2_3({ match }) {
   return (
     <Wrapper>
       <Background page="2_3" />
-      <PageButton pageNumber={match.url} />
+      <PageButton pageNumber={match.url} selectedScore={selected} />
       <VStack>
         <Answer
           isSelected={selected === 1 ? true : false}

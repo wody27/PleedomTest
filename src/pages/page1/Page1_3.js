@@ -8,7 +8,7 @@ export default function Page1_3({ match }) {
   return (
     <Wrapper>
       <Background page="1_3" />
-      <PageButton pageNumber={match.url} />
+      <PageButton pageNumber={match.url} selectedScore={0} />
     </Wrapper>
   );
 }
