@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 export default function Answer({ isSelected, onClick, children }) {
   return (
-    <Label isSelected={isSelected} onClick={onClick}>
+    <Wrapper {...{ isSelected }} {...{ onClick }}>
       {children}
-    </Label>
+    </Wrapper>
   );
 }
 
-const Label = styled.div`
+const Wrapper = styled.div`
   padding: 14px 21px;
   margin-bottom: 12px;
   border-radius: 6px;
