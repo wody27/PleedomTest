@@ -21,13 +21,9 @@ const NextButton = styled.div`
   position: absolute;
   top: 497px;
   left: 66px;
-
-  width: 50%;
+  right: 66px;
 
   z-index: 1;
-
-  width: 243px;
-  height: 48px;
 
   border-radius: 6px;
   border: solid 0 #ffffff;

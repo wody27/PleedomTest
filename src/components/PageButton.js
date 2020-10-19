@@ -24,4 +24,6 @@ const Button = styled.img`
   position: absolute;
   top: 8px;
   ${({ direction }) => (direction === 'left' ? `left: 4px;` : `right: 4px;`)};
+
+  z-index: 2;
 `;
