@@ -28,6 +28,13 @@ import {
   Page8_1,
   Page8_2,
   Page9_1,
+  Page10_1,
+  Page10_2,
+  Page10_3,
+  Page11_1,
+  Page11_2,
+  Page11_3,
+  Page12_1,
 } from './pages';
 
 export default function App() {
@@ -70,6 +77,19 @@ export default function App() {
 
           {/* Page 9 */}
           <Route path="/23" component={Page9_1} />
+
+          {/* Page 10 */}
+          <Route path="/24" component={Page10_1} />
+          <Route path="/25" component={Page10_2} />
+          <Route path="/26" component={Page10_3} />
+
+          {/* Page 11 */}
+          <Route path="/27" component={Page11_1} />
+          <Route path="/28" component={Page11_2} />
+          <Route path="/29" component={Page11_3} />
+
+          {/* Page 12 */}
+          <Route path="/30" component={Page12_1} />
         </Switch>
       </Wrapper>
       <Web>모바일에서 이용해주세요.</Web>
