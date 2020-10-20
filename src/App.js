@@ -105,14 +105,26 @@ const Wrapper = styled.div`
 `;
 
 const Web = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: black;
-  color: white;
-
   @media screen and (max-width: 400px) {
     display: none;
     z-index: 0;
   }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #3acce1;
+  border: solid 3px #3acce1;
+  color: #ffffff;
+
+  text-align: center;
+
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 20px;
+
+  padding: 20px 100px;
+
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.1);
 `;
