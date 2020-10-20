@@ -6,12 +6,10 @@ import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 
 export default function Page10_1({ match, location }) {
-  const query = queryString.parse(location.search);
-
   return (
     <Wrapper>
       <Background page="10_1" />
-      <PageButton pageNumber={match.url} selectedScore={query.score} />
+      <PageButton pageNumber={match.url} />
     </Wrapper>
   );
 }

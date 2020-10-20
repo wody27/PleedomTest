@@ -5,13 +5,14 @@ import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
-export default function Page2_3({ match }) {
+export default function Page2_3({ match, location }) {
   const [selected, setSelected] = useState(-1);
-
+  const answers = location.state.answer;
+  console.log(answers);
   return (
     <Wrapper>
       <Background page="2_3" />
-      <PageButton pageNumber={match.url} selectedScore={selected} />
+      <PageButton pageNumber={match.url} answers={answers} questionNumber={1} selectedScore={selected} />
       <VStack>
         <Answer
           isSelected={selected === 1 ? true : false}

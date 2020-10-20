@@ -7,13 +7,11 @@ import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
 export default function Page7_3({ match, location }) {
-  const query = queryString.parse(location.search);
-
   const [selected, setSelected] = useState(-1);
   return (
     <Wrapper>
       <Background page="7_3" />
-      <PageButton pageNumber={match.url} selectedScore={`${parseInt(query.score) + selected}`} />
+      <PageButton pageNumber={match.url} />
       <VStack>
         <Answer
           isSelected={selected === 1 ? true : false}

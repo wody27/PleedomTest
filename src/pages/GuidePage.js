@@ -6,16 +6,14 @@ import queryString from 'query-string';
 import { left_button, right_button } from '../images';
 import Background from '../components/Background';
 
-export default function GuidePage({ location }) {
-  const query = queryString.parse(location.search);
-
+export default function GuidePage() {
   return (
     <Wrapper>
       <Background page="guide" />
-      <Link to={`/?score=${query.score}`}>
+      <Link to={`/`}>
         <LeftButton src={left_button} alt="left" />
       </Link>
-      <Link to={`/1?score=${query.score}`}>
+      <Link to={`/1`}>
         <RightButton src={right_button} alt="right" />
       </Link>
     </Wrapper>
