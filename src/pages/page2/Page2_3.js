@@ -24,7 +24,7 @@ export default function Page2_3({ match }) {
           혹시 타조 알,,,?
         </Answer>
         <Answer
-          isSelected={selected === 2 ? true : false}
+          isSelected={selected === 0 ? true : false}
           onClick={() => {
             setSelected(2);
           }}

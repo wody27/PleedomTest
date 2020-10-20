@@ -16,17 +16,17 @@ export default function Page7_3({ match, location }) {
       <PageButton pageNumber={match.url} selectedScore={`${parseInt(query.score) + selected}`} />
       <VStack>
         <Answer
-          isSelected={selected === 2 ? true : false}
+          isSelected={selected === 1 ? true : false}
           onClick={() => {
-            setSelected(2);
+            setSelected(1);
           }}
         >
           직접 둘러보면서 살래요~ 일단 출발하게요!
         </Answer>
         <Answer
-          isSelected={selected === 1 ? true : false}
+          isSelected={selected === 0 ? true : false}
           onClick={() => {
-            setSelected(1);
+            setSelected(0);
           }}
         >
           떡, 어묵, 양파, 대파,,, <br />

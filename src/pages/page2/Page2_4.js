@@ -7,7 +7,7 @@ import PageButton from '../../components/PageButton';
 
 export default function Page2_4({ match, location }) {
   const query = queryString.parse(location.search);
-
+  console.log(location);
   return (
     <Wrapper>
       <Background page="2_4" />
