@@ -14,4 +14,17 @@ export { default as bg5_1 } from './5-1.png';
 export { default as bg5_2 } from './5-2.png';
 export { default as bg6_1 } from './6-1.png';
 export { default as bg6_2 } from './6-2.png';
+
 export { default as bg7_1 } from './7-1.png';
+export { default as bg7_2 } from './7-2.png';
+export { default as bg7_3 } from './7-3.png';
+export { default as bg8_1 } from './8-1.png';
+export { default as bg8_2 } from './8-2.png';
+export { default as bg9_1 } from './9-1.png';
+export { default as bg10_1 } from './10-1.png';
+export { default as bg10_2 } from './10-2.png';
+export { default as bg10_3 } from './10-3.png';
+export { default as bg11_1 } from './11-1.png';
+export { default as bg11_2 } from './11-2.png';
+export { default as bg11_3 } from './11-3.png';
+export { default as bg12_1 } from './12.png';

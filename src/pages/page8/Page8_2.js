@@ -6,13 +6,13 @@ import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
-export default function Page6_3({ match, location }) {
+export default function Page8_2({ match, location }) {
   const query = queryString.parse(location.search);
 
   const [selected, setSelected] = useState(-1);
   return (
     <Wrapper>
-      <Background page="6_3" />
+      <Background page="8_2" />
       <PageButton pageNumber={match.url} selectedScore={`${parseInt(query.score) + selected}`} />
       <VStack>
         <Answer
@@ -21,8 +21,8 @@ export default function Page6_3({ match, location }) {
             setSelected(2);
           }}
         >
-          항상 준비되어 있지! 나와라 텀블러 & 빨대! <br />
-          여기에 담아 주세요^^(으쓱코쓱)
+          롤백 사용하지 않아도 <br />
+          손으로 가져갈 수 있겠는데요?
         </Answer>
         <Answer
           isSelected={selected === 1 ? true : false}
@@ -30,8 +30,8 @@ export default function Page6_3({ match, location }) {
             setSelected(1);
           }}
         >
-          앗! 깜빡하고 텀블러를 집에 두고 왔네요! <br />
-          일회용 컵에 주세요!
+          비닐 대신 손으로 가져갈 수 있지만 <br />
+          위생상 롤백에 담을래요.
         </Answer>
         <Answer
           isSelected={selected === 0 ? true : false}
@@ -39,7 +39,7 @@ export default function Page6_3({ match, location }) {
             setSelected(0);
           }}
         >
-          그냥 일회용 컵에 주세요!
+          당연히 채소는 롤백에 담아 가야한다고 생각해요!
         </Answer>
       </VStack>
     </Wrapper>
@@ -50,7 +50,7 @@ const Wrapper = styled.div``;
 
 const VStack = styled.div`
   position: absolute;
-  top: 193px;
+  top: 179px;
   left: 16px;
   right: 16px;
   z-index: 4;

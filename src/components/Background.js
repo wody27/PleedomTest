@@ -16,6 +16,19 @@ import {
   bg5_2,
   bg6_1,
   bg6_2,
+  bg7_1,
+  bg7_2,
+  bg7_3,
+  bg8_1,
+  bg8_2,
+  bg9_1,
+  bg10_1,
+  bg10_2,
+  bg10_3,
+  bg11_1,
+  bg11_2,
+  bg11_3,
+  bg12_1,
 } from '../images';
 
 export default function Background({ page }) {
@@ -58,6 +71,32 @@ export default function Background({ page }) {
       return <Img src={bg6_2} alt="" />;
     case '6_3':
       return <Img src={bg6_2} alt="" />;
+    case '7_1':
+      return <Img src={bg7_1} alt="" />;
+    case '7_2':
+      return <Img src={bg7_2} alt="" />;
+    case '7_3':
+      return <Img src={bg7_3} alt="" />;
+    case '8_1':
+      return <Img src={bg8_1} alt="" />;
+    case '8_2':
+      return <Img src={bg8_2} alt="" />;
+    case '9_1':
+      return <Img src={bg9_1} alt="" />;
+    case '10_1':
+      return <Img src={bg10_1} alt="" />;
+    case '10_2':
+      return <Img src={bg10_2} alt="" />;
+    case '10_3':
+      return <Img src={bg10_3} alt="" />;
+    case '11_1':
+      return <Img src={bg11_1} alt="" />;
+    case '11_2':
+      return <Img src={bg11_2} alt="" />;
+    case '11_3':
+      return <Img src={bg11_3} alt="" />;
+    case '12_1':
+      return <Img src={bg12_1} alt="" />;
     default:
       return <Img src="bg_start" alt="" />;
   }

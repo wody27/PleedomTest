@@ -6,13 +6,13 @@ import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
-export default function Page6_3({ match, location }) {
+export default function Page9_1({ match, location }) {
   const query = queryString.parse(location.search);
 
   const [selected, setSelected] = useState(-1);
   return (
     <Wrapper>
-      <Background page="6_3" />
+      <Background page="9_1" />
       <PageButton pageNumber={match.url} selectedScore={`${parseInt(query.score) + selected}`} />
       <VStack>
         <Answer
@@ -21,8 +21,7 @@ export default function Page6_3({ match, location }) {
             setSelected(2);
           }}
         >
-          항상 준비되어 있지! 나와라 텀블러 & 빨대! <br />
-          여기에 담아 주세요^^(으쓱코쓱)
+          오늘도 장바구니를 잘 챙겨 왔어요!
         </Answer>
         <Answer
           isSelected={selected === 1 ? true : false}
@@ -30,8 +29,8 @@ export default function Page6_3({ match, location }) {
             setSelected(1);
           }}
         >
-          앗! 깜빡하고 텀블러를 집에 두고 왔네요! <br />
-          일회용 컵에 주세요!
+          장바구니를 깜빡했네요.. <br />
+          오늘만 비닐봉지 달라고 해야겠어요…에휴..
         </Answer>
         <Answer
           isSelected={selected === 0 ? true : false}
@@ -39,7 +38,7 @@ export default function Page6_3({ match, location }) {
             setSelected(0);
           }}
         >
-          그냥 일회용 컵에 주세요!
+          50원 주고 비닐봉지에 담아가는게 역시 편하죠
         </Answer>
       </VStack>
     </Wrapper>
@@ -50,7 +49,7 @@ const Wrapper = styled.div``;
 
 const VStack = styled.div`
   position: absolute;
-  top: 193px;
+  top: 179px;
   left: 16px;
   right: 16px;
   z-index: 4;
