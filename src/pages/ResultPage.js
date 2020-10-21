@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Background from '../components/Background';
-import { kakaoButton1, kakaoButton2, photo } from '../images';
+import KakaoShareButton from '../components/KakaoShareButton';
+
+import { photo } from '../images';
 
 export default function ResultPage({ location }) {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://developers.kakao.com/sdk/js/kakao.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const scoreArray = location.state.answer;
   const mbtiArray = location.state.mbti;
 
@@ -93,7 +105,7 @@ export default function ResultPage({ location }) {
       </QuestionLabel>
       <StoryButton>스토리 보러가기</StoryButton>
       <ShareLabel>테스트 공유하기</ShareLabel>
-      <KakaoButton src={kakaoButton2} alt="" />
+      <KakaoButton />
       <Link to="/">
         <MainButton>메인으로 돌아가기</MainButton>
       </Link>
@@ -288,13 +300,13 @@ const ShareLabel = styled.div`
   color: #3acce1;
 `;
 
-const KakaoButton = styled.img`
-  position: absolute;
-  top: 1589px;
-  left: 137px;
+const KakaoButton = styled(KakaoShareButton)`
+  //   position: absolute;
+  //   top: 1589px;
+  //   left: 137px;
 
-  width: 29px;
-  height: 29px;
+  //   width: 29px;
+  //   height: 29px;
 `;
 
 const MainButton = styled.div`

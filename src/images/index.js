@@ -29,6 +29,4 @@ export { default as bg11_2 } from './11-2.png';
 export { default as bg11_3 } from './11-3.png';
 export { default as bg12_1 } from './12.png';
 export { default as photo } from './photo.png';
-
-export { default as kakaoButton1 } from './kakaolink_btn_medium_ov.png';
-export { default as kakaoButton2 } from './kakaolink_btn_medium.png';
+export { default as kakaoButton } from './kakao.png';
