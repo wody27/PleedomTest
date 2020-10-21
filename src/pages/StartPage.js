@@ -5,9 +5,19 @@ import { Link } from 'react-router-dom';
 import Background from '../components/Background';
 
 export default function StartPage() {
+  const answers = [-1, -1, -1, -1, -1];
+  const mbti = ['a', 'a', 'a', 'a'];
   return (
     <Wrapper>
-      <Link to="/0">
+      <Link
+        to={{
+          pathname: '/0',
+          state: {
+            answer: answers,
+            mbti: mbti,
+          },
+        }}
+      >
         <NextButton>시작하기</NextButton>
       </Link>
       <Background page="start" />

@@ -6,15 +6,36 @@ import queryString from 'query-string';
 import { left_button, right_button } from '../images';
 import Background from '../components/Background';
 
-export default function GuidePage() {
+export default function GuidePage({ location }) {
+  const answers = location.state.answer;
+  const mbti = location.state.mbti;
+
+  console.log(answers);
+  console.log(mbti);
   return (
     <Wrapper>
       <Background page="guide" />
-      <Link to={`/`}>
-        <LeftButton src={left_button} alt="left" />
+      <Link
+        to={{
+          pathname: '/',
+          state: {
+            answer: answers,
+            mbti: mbti,
+          },
+        }}
+      >
+        <LeftButton src={left_button} direction="left" alt="button" />
       </Link>
-      <Link to={`/1`}>
-        <RightButton src={right_button} alt="right" />
+      <Link
+        to={{
+          pathname: '/1',
+          state: {
+            answer: answers,
+            mbti: mbti,
+          },
+        }}
+      >
+        <RightButton src={right_button} direction="right" alt="button" />
       </Link>
     </Wrapper>
   );
