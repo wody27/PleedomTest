@@ -39,8 +39,13 @@ const NextButton = styled.div`
   border: solid 0 #ffffff;
   background-color: #3acce1;
 
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
   text-align: center;
+  color: #ffffff;
   line-height: 48px;
-
-  color: white;
 `;

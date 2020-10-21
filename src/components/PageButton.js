@@ -5,8 +5,9 @@ import { left_button, right_button } from '../images';
 
 export default function PageButton({ pageNumber, location, number, selected, question }) {
   const page = pageNumber.replace('/', '');
+
   const prevPage = `/${parseInt(page) - 1}`;
-  const nextPage = `/${parseInt(page) + 1}`;
+  const nextPage = parseInt(page) === 30 ? `/result` : `/${parseInt(page) + 1}`;
 
   const answers = location.state.answer;
   const mbti = location.state.mbti;

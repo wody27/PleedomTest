@@ -35,6 +35,7 @@ import {
   Page11_2,
   Page11_3,
   Page12_1,
+  ResultPage,
 } from './pages';
 
 export default function App() {
@@ -90,6 +91,8 @@ export default function App() {
 
           {/* Page 12 */}
           <Route path="/30" component={Page12_1} />
+
+          <Route path="/result" component={ResultPage} />
         </Switch>
       </Wrapper>
       <Web>모바일에서 이용해주세요.</Web>
@@ -98,14 +101,14 @@ export default function App() {
 }
 
 const Wrapper = styled.div`
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 415px) {
     display: none;
     z-index: 0;
   }
 `;
 
 const Web = styled.div`
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 414px) {
     display: none;
     z-index: 0;
   }

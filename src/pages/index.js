@@ -30,3 +30,4 @@ export { default as Page11_1 } from './page11/Page11_1';
 export { default as Page11_2 } from './page11/Page11_2';
 export { default as Page11_3 } from './page11/Page11_3';
 export { default as Page12_1 } from './page12/Page12_1';
+export { default as ResultPage } from './ResultPage';
