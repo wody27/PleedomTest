@@ -6,17 +6,15 @@ import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
 export default function Page2_3({ match, location }) {
-  const answers = location.state.answer;
+  const number = 1;
   const mbti = location.state.mbti;
-  const [selected, setSelected] = useState(mbti[1]);
-  mbti[1] = selected;
-  console.log(mbti);
-  console.log(answers);
+  const [selected, setSelected] = useState(mbti[number]);
+  const question = 'mbti';
 
   return (
     <Wrapper>
       <Background page="2_3" />
-      <PageButton pageNumber={match.url} answers={answers} {...{ mbti }} />
+      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
       {/* questionNumber={1} selectedScore={selected} */}
       <VStack>
         <Answer

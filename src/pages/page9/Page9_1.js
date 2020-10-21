@@ -1,22 +1,20 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import queryString from 'query-string';
 
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
 export default function Page9_1({ match, location }) {
+  const number = 4;
   const answers = location.state.answer;
-  const mbti = location.state.mbti;
-  const [selected, setSelected] = useState(answers[4]);
-  answers[4] = selected;
-  console.log(mbti);
-  console.log(answers);
+  const [selected, setSelected] = useState(answers[number]);
+  const question = 'score';
+
   return (
     <Wrapper>
       <Background page="9_1" />
-      <PageButton pageNumber={match.url} {...{ answers }} {...{ mbti }} />
+      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
       <VStack>
         <Answer
           isSelected={selected === 2 ? true : false}

@@ -3,11 +3,21 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { left_button, right_button } from '../images';
 
-export default function PageButton({ pageNumber, answers, mbti }) {
+export default function PageButton({ pageNumber, location, number, selected, question }) {
   const page = pageNumber.replace('/', '');
   const prevPage = `/${parseInt(page) - 1}`;
   const nextPage = `/${parseInt(page) + 1}`;
 
+  const answers = location.state.answer;
+  const mbti = location.state.mbti;
+
+  if (number !== undefined && selected !== undefined) {
+    if (question === 'mbti') {
+      mbti[number] = selected;
+    } else {
+      answers[number] = selected;
+    }
+  }
   return (
     <Fragment>
       <Link

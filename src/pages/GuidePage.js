@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import queryString from 'query-string';
 
 import { left_button, right_button } from '../images';
 import Background from '../components/Background';
@@ -10,8 +9,6 @@ export default function GuidePage({ location }) {
   const answers = location.state.answer;
   const mbti = location.state.mbti;
 
-  console.log(answers);
-  console.log(mbti);
   return (
     <Wrapper>
       <Background page="guide" />
