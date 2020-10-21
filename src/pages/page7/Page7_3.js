@@ -7,24 +7,29 @@ import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
 export default function Page7_3({ match, location }) {
-  const [selected, setSelected] = useState(-1);
+  const answers = location.state.answer;
+  const mbti = location.state.mbti;
+  const [selected, setSelected] = useState(mbti[3]);
+  mbti[3] = selected;
+  console.log(mbti);
+  console.log(answers);
   return (
     <Wrapper>
       <Background page="7_3" />
-      <PageButton pageNumber={match.url} />
+      <PageButton pageNumber={match.url} {...{ answers }} {...{ mbti }} />
       <VStack>
         <Answer
-          isSelected={selected === 1 ? true : false}
+          isSelected={selected === 'P' ? true : false}
           onClick={() => {
-            setSelected(1);
+            setSelected('P');
           }}
         >
           직접 둘러보면서 살래요~ 일단 출발하게요!
         </Answer>
         <Answer
-          isSelected={selected === 0 ? true : false}
+          isSelected={selected === 'J' ? true : false}
           onClick={() => {
-            setSelected(0);
+            setSelected('J');
           }}
         >
           떡, 어묵, 양파, 대파,,, <br />

@@ -7,11 +7,16 @@ import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
 export default function Page8_2({ match, location }) {
-  const [selected, setSelected] = useState(-1);
+  const answers = location.state.answer;
+  const mbti = location.state.mbti;
+  const [selected, setSelected] = useState(answers[3]);
+  answers[3] = selected;
+  console.log(mbti);
+  console.log(answers);
   return (
     <Wrapper>
       <Background page="8_2" />
-      <PageButton pageNumber={match.url} />
+      <PageButton pageNumber={match.url} {...{ answers }} {...{ mbti }} />
       <VStack>
         <Answer
           isSelected={selected === 2 ? true : false}

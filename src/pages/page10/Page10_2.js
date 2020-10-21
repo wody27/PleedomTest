@@ -6,10 +6,12 @@ import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 
 export default function Page10_2({ match, location }) {
+  const answers = location.state.answer;
+  const mbti = location.state.mbti;
   return (
     <Wrapper>
       <Background page="10_2" />
-      <PageButton pageNumber={match.url} />
+      <PageButton pageNumber={match.url} {...{ answers }} {...{ mbti }} />
     </Wrapper>
   );
 }

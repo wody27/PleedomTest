@@ -3,30 +3,19 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { left_button, right_button } from '../images';
 
-export default function PageButton({ pageNumber, answers, questionNumber, selectedScore }) {
+export default function PageButton({ pageNumber, answers, mbti }) {
   const page = pageNumber.replace('/', '');
   const prevPage = `/${parseInt(page) - 1}`;
   const nextPage = `/${parseInt(page) + 1}`;
 
-  let result = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1];
-
-  if (answers !== undefined) {
-    result = answers;
-  }
-
-  if (questionNumber !== undefined && selectedScore !== undefined) {
-    result[questionNumber - 1] = selectedScore;
-  }
-
-  // let changedAnswer = answers;
-  // changedAnswer[questionNumber] = parseInt(selectedScore);
   return (
     <Fragment>
       <Link
         to={{
           pathname: prevPage,
           state: {
-            answer: result,
+            answer: answers,
+            mbti: mbti,
           },
         }}
       >
@@ -36,7 +25,8 @@ export default function PageButton({ pageNumber, answers, questionNumber, select
         to={{
           pathname: nextPage,
           state: {
-            answer: result,
+            answer: answers,
+            mbti: mbti,
           },
         }}
       >

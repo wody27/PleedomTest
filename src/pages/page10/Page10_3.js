@@ -7,16 +7,21 @@ import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
 export default function Page10_3({ match, location }) {
-  const [selected, setSelected] = useState(-1);
+  const answers = location.state.answer;
+  const mbti = location.state.mbti;
+  const [selected, setSelected] = useState(mbti[2]);
+  mbti[2] = selected;
+  console.log(mbti);
+  console.log(answers);
   return (
     <Wrapper>
       <Background page="10_3" />
-      <PageButton pageNumber={match.url} />
+      <PageButton pageNumber={match.url} {...{ answers }} {...{ mbti }} />
       <VStack>
         <Answer
-          isSelected={selected === 2 ? true : false}
+          isSelected={selected === 'T' ? true : false}
           onClick={() => {
-            setSelected(2);
+            setSelected('T');
           }}
         >
           세상에.. 쓰레기섬이 얼마나 크길래 <br />
@@ -24,9 +29,9 @@ export default function Page10_3({ match, location }) {
           어디서 모여든 폐플라스틱일까요? ㅜㅜ
         </Answer>
         <Answer
-          isSelected={selected === 1 ? true : false}
+          isSelected={selected === 'F' ? true : false}
           onClick={() => {
-            setSelected(1);
+            setSelected('F');
           }}
         >
           쓰레기섬에서 플라스틱 먹고 있는 새라니.. <br />

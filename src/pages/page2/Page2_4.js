@@ -5,11 +5,15 @@ import queryString from 'query-string';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 
-export default function Page2_4({ match }) {
+export default function Page2_4({ match, location }) {
+  const answers = location.state.answer;
+  const mbti = location.state.mbti;
+  console.log(mbti);
+  console.log(answers);
   return (
     <Wrapper>
       <Background page="2_4" />
-      <PageButton pageNumber={match.url} />
+      <PageButton pageNumber={match.url} {...{ answers }} {...{ mbti }} />
     </Wrapper>
   );
 }

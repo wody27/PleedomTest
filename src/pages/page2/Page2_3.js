@@ -6,18 +6,23 @@ import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
 
 export default function Page2_3({ match, location }) {
-  const [selected, setSelected] = useState(-1);
   const answers = location.state.answer;
+  const mbti = location.state.mbti;
+  const [selected, setSelected] = useState(mbti[1]);
+  mbti[1] = selected;
+  console.log(mbti);
   console.log(answers);
+
   return (
     <Wrapper>
       <Background page="2_3" />
-      <PageButton pageNumber={match.url} answers={answers} questionNumber={1} selectedScore={selected} />
+      <PageButton pageNumber={match.url} answers={answers} {...{ mbti }} />
+      {/* questionNumber={1} selectedScore={selected} */}
       <VStack>
         <Answer
-          isSelected={selected === 1 ? true : false}
+          isSelected={selected === 'S' ? true : false}
           onClick={() => {
-            setSelected(1);
+            setSelected('S');
           }}
         >
           엄청 크고 매끄러운 촉감이 느껴져..! <br />
@@ -25,9 +30,9 @@ export default function Page2_3({ match, location }) {
           혹시 타조 알,,,?
         </Answer>
         <Answer
-          isSelected={selected === 0 ? true : false}
+          isSelected={selected === 'N' ? true : false}
           onClick={() => {
-            setSelected(2);
+            setSelected('N');
           }}
         >
           알에서 뭐가 나올까? <br />
