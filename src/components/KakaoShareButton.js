@@ -8,12 +8,8 @@ const KakaoShareButton = () => {
     if (window.Kakao) {
       const Kakao = window.Kakao;
 
-      console.log(`${process.env.REACT_APP_KEY}`);
-
       if (!Kakao.isInitialized()) {
         Kakao.init(`${process.env.REACT_APP_KEY}`);
-        // CONFIG.KAKAO_KEY
-        //${process.env.REACT_APP_KEY}
       }
       Kakao.Link.sendCustom({
         templateId: 39126,
