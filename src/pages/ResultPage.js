@@ -50,6 +50,8 @@ export default function ResultPage({ location }) {
       case 1:
       case 0:
         return lowMission[getRandomInt(0, 6)];
+      default:
+        return;
     }
   };
   const highMission = [
@@ -81,7 +83,8 @@ export default function ResultPage({ location }) {
 
   return (
     <Wrapper>
-      <Background page="1_1" />
+      <Background page="card" alt="card" />
+
       <Label>
         ‘작은 행동으로 큰 변화를 이끌어 낼 당신에게.’
         <br />더 나은 지구를 위한 방법, 함께해요!
@@ -300,14 +303,7 @@ const ShareLabel = styled.div`
   color: #3acce1;
 `;
 
-const KakaoButton = styled(KakaoShareButton)`
-  //   position: absolute;
-  //   top: 1589px;
-  //   left: 137px;
-
-  //   width: 29px;
-  //   height: 29px;
-`;
+const KakaoButton = styled(KakaoShareButton)``;
 
 const MainButton = styled.div`
   position: absolute;
