@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import CONFIG from '../config/KAKAO_KEY';
 import { kakaoButton } from '../images';
 
 const KakaoShareButton = () => {
