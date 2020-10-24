@@ -9,7 +9,7 @@ const KakaoShareButton = () => {
       const Kakao = window.Kakao;
 
       if (!Kakao.isInitialized()) {
-        Kakao.init(process.env.REACT_APP_KAKAO_KEY);
+        Kakao.init(`${process.env.REACT_APP_KEY}`);
         // CONFIG.KAKAO_KEY
       }
       Kakao.Link.sendCustom({
