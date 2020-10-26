@@ -3,7 +3,11 @@ import styled from 'styled-components';
 
 import {
   bg_start,
-  bg0,
+  bg_guide,
+  bg1_1,
+  bg1_2,
+  bg1_3,
+  bg2_1,
   bg2_2,
   bg2_3,
   bg2_4,
@@ -37,15 +41,15 @@ export default function Background({ page }) {
     case 'start':
       return <Img src={bg_start} alt="" />;
     case 'guide':
-      return <Img src={bg0} alt="" />;
+      return <Img src={bg_guide} alt="" />;
     case '1_1':
-      return <Img src={bg2_2} alt="" />;
+      return <Img src={bg1_1} alt="" />;
     case '1_2':
-      return <Img src={bg2_2} alt="" />;
+      return <Img src={bg1_2} alt="" />;
     case '1_3':
-      return <Img src={bg2_2} alt="" />;
+      return <Img src={bg1_3} alt="" />;
     case '2_1':
-      return <Img src={bg2_2} alt="" />;
+      return <Img src={bg2_1} alt="" />;
     case '2_2':
       return <Img src={bg2_2} alt="" />;
     case '2_3':
