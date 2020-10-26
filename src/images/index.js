@@ -36,3 +36,8 @@ export { default as bg12_1 } from './12.png';
 export { default as photo } from './photo.png';
 export { default as kakaoButton } from './kakao.png';
 export { default as img_card_size } from './img_card_size.png';
+export { default as img_box_tape } from './img-box-tape.png';
+export { default as img_pet } from './img-pet.png';
+export { default as img_plastic_clean } from './img-plastic-clean.png';
+export { default as img_plastic_red } from './img-plastic-red.png';
+export { default as img_toothbrush } from './img-toothbrush.png';

@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
   ${({ isSelected }) =>
     isSelected
-      ? 'background-color: #3acce1; border: solid 3px #3acce1;  color: #ffffff;'
+      ? 'background-color: #3acce1; border: solid 1px #3acce1;  color: #ffffff;'
       : 'background-color:rgba(255, 255, 255, 0.72); border: solid 1px #ffffff; color: #38474b;'};
 
   font-weight: normal;

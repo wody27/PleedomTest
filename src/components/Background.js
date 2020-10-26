@@ -18,6 +18,7 @@ import {
   bg4_1,
   bg5_1,
   bg5_2,
+  bg5_3,
   bg6_1,
   bg6_2,
   bg7_1,
@@ -70,6 +71,8 @@ export default function Background({ page }) {
       return <Img src={bg5_1} alt="" />;
     case '5_2':
       return <Img src={bg5_2} alt="" />;
+    case '5_3':
+      return <Img src={bg5_3} alt="" />;
     case '6_1':
       return <Img src={bg6_1} alt="" />;
     case '6_2':
@@ -114,5 +117,6 @@ const Img = styled.img`
   top: 0;
   left: 0;
   width: 100%;
+  // height: 100%;
   z-index: 0;
 `;

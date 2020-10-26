@@ -1,16 +1,101 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
+import { img_box_tape, img_plastic_clean, img_plastic_red, img_pet, img_toothbrush } from '../../images';
 
 export default function Page5_2({ match, location }) {
+  const [selected, setSelected] = useState(0);
+
   return (
     <Wrapper>
       <Background page="5_2" />
       <PageButton pageNumber={match.url} {...{ location }} />
+      <VStack>
+        <HStack>
+          <Button
+            isSelected={selected === 1 ? true : false}
+            onClick={() => {
+              setSelected(1);
+            }}
+          >
+            <Img src={img_plastic_red} alt="card" width="130.2px" height="65.6px" />
+          </Button>
+          <Button
+            isSelected={selected === 2 ? true : false}
+            onClick={() => {
+              setSelected(2);
+            }}
+          >
+            <Img src={img_pet} alt="card" width="79.2px" height="112.8px" />
+          </Button>
+        </HStack>
+        <HStack>
+          <Button
+            isSelected={selected === 3 ? true : false}
+            onClick={() => {
+              setSelected(3);
+            }}
+          >
+            <Img src={img_toothbrush} alt="card" width="98.5px" height="115px" />
+          </Button>
+          <Button
+            isSelected={selected === 4 ? true : false}
+            onClick={() => {
+              setSelected(4);
+            }}
+          >
+            <Img src={img_plastic_clean} alt="card" width="135.2px" height="80.5px" />
+          </Button>
+        </HStack>
+        <Button
+          isSelected={selected === 5 ? true : false}
+          onClick={() => {
+            setSelected(5);
+          }}
+        >
+          <Img src={img_box_tape} alt="card" width="110.8px" height="93px" />
+        </Button>
+      </VStack>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div``;
+
+const Img = styled.img``;
+
+const VStack = styled.div`
+  position: absolute;
+  top: 179px;
+  left: 34px;
+  right: 25px;
+
+  z-index: 2;
+`;
+
+const HStack = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+`;
+
+const Button = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 152px;
+  height: 152px;
+
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.08);
+
+  ${({ isSelected }) =>
+    isSelected
+      ? 'border: solid 1px #3acce1; background-color: #3acce1;'
+      : 'border: solid 1px #ffffff; background-color: rgba(248, 248, 248, 0.72);'};
+`;

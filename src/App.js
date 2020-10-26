@@ -19,6 +19,7 @@ import {
   Page4_1,
   Page5_1,
   Page5_2,
+  Page5_3,
   Page6_1,
   Page6_2,
   Page6_3,
@@ -64,33 +65,34 @@ export default function App() {
           {/* Page 5 */}
           <Route path="/13" component={Page5_1} />
           <Route path="/14" component={Page5_2} />
+          <Route path="/15" component={Page5_3} />
           {/* Page 6 */}
-          <Route path="/15" component={Page6_1} />
-          <Route path="/16" component={Page6_2} />
-          <Route path="/17" component={Page6_3} />
+          <Route path="/16" component={Page6_1} />
+          <Route path="/17" component={Page6_2} />
+          <Route path="/18" component={Page6_3} />
           {/* Page 7 */}
-          <Route path="/18" component={Page7_1} />
-          <Route path="/19" component={Page7_2} />
-          <Route path="/20" component={Page7_3} />
+          <Route path="/19" component={Page7_1} />
+          <Route path="/20" component={Page7_2} />
+          <Route path="/21" component={Page7_3} />
           {/* Page 8 */}
-          <Route path="/21" component={Page8_1} />
-          <Route path="/22" component={Page8_2} />
+          <Route path="/22" component={Page8_1} />
+          <Route path="/23" component={Page8_2} />
 
           {/* Page 9 */}
-          <Route path="/23" component={Page9_1} />
+          <Route path="/24" component={Page9_1} />
 
           {/* Page 10 */}
-          <Route path="/24" component={Page10_1} />
-          <Route path="/25" component={Page10_2} />
-          <Route path="/26" component={Page10_3} />
+          <Route path="/25" component={Page10_1} />
+          <Route path="/26" component={Page10_2} />
+          <Route path="/27" component={Page10_3} />
 
           {/* Page 11 */}
-          <Route path="/27" component={Page11_1} />
-          <Route path="/28" component={Page11_2} />
-          <Route path="/29" component={Page11_3} />
+          <Route path="/28" component={Page11_1} />
+          <Route path="/29" component={Page11_2} />
+          <Route path="/30" component={Page11_3} />
 
           {/* Page 12 */}
-          <Route path="/30" component={Page12_1} />
+          <Route path="/31" component={Page12_1} />
 
           <Route path="/result" component={ResultPage} />
         </Switch>
