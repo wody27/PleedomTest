@@ -7,7 +7,7 @@ export default function PageButton({ pageNumber, location, number, selected, que
   const page = pageNumber.replace('/', '');
 
   const prevPage = `/${parseInt(page) - 1}`;
-  const nextPage = parseInt(page) === 30 ? `/result` : `/${parseInt(page) + 1}`;
+  const nextPage = parseInt(page) === 31 ? `/result` : `/${parseInt(page) + 1}`;
 
   const answers = location.state.answer;
   const mbti = location.state.mbti;
