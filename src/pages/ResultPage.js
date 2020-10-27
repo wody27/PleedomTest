@@ -8,6 +8,7 @@ import KakaoShareButton from '../components/KakaoShareButton';
 import { photo } from '../images';
 
 export default function ResultPage({ location }) {
+  // 카카오 기능
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://developers.kakao.com/sdk/js/kakao.js';
