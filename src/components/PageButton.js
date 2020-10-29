@@ -49,8 +49,8 @@ export default function PageButton({ pageNumber, location, number, selected, que
 
 const Button = styled.img`
   position: absolute;
-  top: 8px;
-  ${({ direction }) => (direction === 'left' ? `left: 4px;` : `right: 4px;`)};
+  top: 40px;
+  ${({ direction }) => (direction === 'left' ? `left: 8px;` : `right: 8px;`)};
 
   z-index: 2;
 `;

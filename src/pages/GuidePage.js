@@ -42,12 +42,12 @@ const Wrapper = styled.div``;
 
 const LeftButton = styled.img`
   position: absolute;
-  top: 8px;
-  left: 4px;
+  top: 40px;
+  left: 8px;
 `;
 
 const RightButton = styled.img`
   position: absolute;
-  top: 8px;
-  right: 4px;
+  top: 40px;
+  right: 8px;
 `;

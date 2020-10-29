@@ -42,46 +42,46 @@ export { default as img_plastic_clean } from './img-plastic-clean.png';
 export { default as img_plastic_red } from './img-plastic-red.png';
 export { default as img_toothbrush } from './img-toothbrush.png';
 
-export { default as ENFJ_halfSeal_high } from '../ENFJ-halfSeal-high.png';
-export { default as ENFJ_halfSeal_middle } from '../ENFJ-halfSeal-middle.png';
-export { default as ENFJ_halfSeal_low } from '../ENFJ-halfSeal-low.png';
+export { default as ENFJ_halfSeal_high } from './ENFJ-halfSeal-high.png';
+export { default as ENFJ_halfSeal_middle } from './ENFJ-halfSeal-middle.png';
+export { default as ENFJ_halfSeal_low } from './ENFJ-halfSeal-low.png';
 
-export { default as ENFP_otter_high } from '../ENFP-otter-high.png';
-export { default as ENFP_otter_middle } from '../ENFP-otter-middle.png';
-export { default as ENFP_otter_low } from '../ENFP-otter-low.png';
+export { default as ENFP_otter_high } from './ENFP-otter-high.png';
+export { default as ENFP_otter_middle } from './ENFP-otter-middle.png';
+export { default as ENFP_otter_low } from './ENFP-otter-low.png';
 
-export { default as ENTJ_bird_high } from '../ENTJ-bird-high.png';
-export { default as ENTJ_bird_middle } from '../ENTJ-bird-middle.png';
-export { default as ENTJ_bird_low } from '../ENTJ-bird-low.png';
+export { default as ENTJ_bird_high } from './ENTJ-bird-high.png';
+export { default as ENTJ_bird_middle } from './ENTJ-bird-middle.png';
+export { default as ENTJ_bird_low } from './ENTJ-bird-low.png';
 
-export { default as ENTP_seal_high } from '../ENTP-seal-high.png';
-export { default as ENTP_seal_middle } from '../ENTP-seal-middle.png';
-export { default as ENTP_seal_low } from '../ENTP-seal-low.png';
+export { default as ENTP_seal_high } from './ENTP-seal-high.png';
+export { default as ENTP_seal_middle } from './ENTP-seal-middle.png';
+export { default as ENTP_seal_low } from './ENTP-seal-low.png';
 
-export { default as ESFJ_penguin_high } from '../ESFJ-penguin-high.png';
-export { default as ESFJ_penguin_middle } from '../ESFJ-penguin-middle.png';
-export { default as ESFJ_penguin_low } from '../ESFJ-penguin-low.png';
+export { default as ESFJ_penguin_high } from './ESFJ-penguin-high.png';
+export { default as ESFJ_penguin_middle } from './ESFJ-penguin-middle.png';
+export { default as ESFJ_penguin_low } from './ESFJ-penguin-low.png';
 
-export { default as ESFP_seaDuck_high } from '../ESFP-seaDuck-high.png';
-export { default as ESFP_seaDuck_middle } from '../ESFP-seaDuck-middle.png';
-export { default as ESFP_seaDuck_low } from '../ESFP-seaDuck-low.png';
+export { default as ESFP_seaDuck_high } from './ESFP-seaDuck-high.png';
+export { default as ESFP_seaDuck_middle } from './ESFP-seaDuck-middle.png';
+export { default as ESFP_seaDuck_low } from './ESFP-seaDuck-low.png';
 
-export { default as ESTJ_seaElephant_high } from '../ESTJ-seaElephant-high.png';
-export { default as ESTJ_seaElephant_middle } from '../ESTJ-seaElephant-middle.png';
-export { default as ESTJ_seaElephant_low } from '../ESTJ-seaElephant-low.png';
+export { default as ESTJ_seaElephant_high } from './ESTJ-seaElephant-high.png';
+export { default as ESTJ_seaElephant_middle } from './ESTJ-seaElephant-middle.png';
+export { default as ESTJ_seaElephant_low } from './ESTJ-seaElephant-low.png';
 
-export { default as ESTP_seaLeopard_high } from '../ESTP-seaLeopard-high.png';
-export { default as ESTP_seaLeopard_middle } from '../ESTP-seaLeopard-middle.png';
-export { default as ESTP_seaLeopard_low } from '../ESTP-seaLeopard-low.png';
+export { default as ESTP_seaLeopard_high } from './ESTP-seaLeopard-high.png';
+export { default as ESTP_seaLeopard_middle } from './ESTP-seaLeopard-middle.png';
+export { default as ESTP_seaLeopard_low } from './ESTP-seaLeopard-low.png';
 
-export { default as INFJ_dolphin_high } from '../INFJ-dolphin-high.png';
-export { default as INFJ_dolphin_middle } from '../INFJ-dolphin-middle.png';
-export { default as INFJ_dolphin_low } from '../INFJ-dolphin-low.png';
+export { default as INFJ_dolphin_high } from './INFJ-dolphin-high.png';
+export { default as INFJ_dolphin_middle } from './INFJ-dolphin-middle.png';
+export { default as INFJ_dolphin_low } from './INFJ-dolphin-low.png';
 
-export { default as INFP_whaleShark_high } from '../INFP-whaleShark-high.png';
-export { default as INFP_whaleShark_middle } from '../INFP-whaleShark-middle.png';
-export { default as INFP_whaleShark_low } from '../INFP-whaleShark-low.png';
+export { default as INFP_whaleShark_high } from './INFP-whaleShark-high.png';
+export { default as INFP_whaleShark_middle } from './INFP-whaleShark-middle.png';
+export { default as INFP_whaleShark_low } from './INFP-whaleShark-low.png';
 
-export { default as INTJ_northBear_high } from '../INTJ-northBear-high';
-export { default as INTJ_northBear_middle } from '../INTJ-northBear-middle';
-export { default as INTJ_northBear_low } from '../INTJ-northBear-low';
+export { default as INTJ_northBear_high } from './INTJ-northBear-high.png';
+export { default as INTJ_northBear_middle } from './INTJ-northBear-middle.png';
+export { default as INTJ_northBear_low } from './INTJ-northBear-low.png';
