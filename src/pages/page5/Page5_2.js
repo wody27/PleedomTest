@@ -20,7 +20,7 @@ export default function Page5_2({ match, location }) {
               setSelected(1);
             }}
           >
-            <Img src={img_plastic_red} alt="card" width="130.2px" height="65.6px" />
+            <Img src={img_plastic_red} alt="card" width="136px" height="99px" />
           </Button>
           <Button
             isSelected={selected === 2 ? true : false}
@@ -28,7 +28,7 @@ export default function Page5_2({ match, location }) {
               setSelected(2);
             }}
           >
-            <Img src={img_pet} alt="card" width="79.2px" height="112.8px" />
+            <Img src={img_pet} alt="card" width="136px" height="118px" />
           </Button>
         </HStack>
         <HStack>
@@ -38,7 +38,7 @@ export default function Page5_2({ match, location }) {
               setSelected(3);
             }}
           >
-            <Img src={img_toothbrush} alt="card" width="98.5px" height="115px" />
+            <Img src={img_toothbrush} alt="card" width="136px" height="124.5px" />
           </Button>
           <Button
             isSelected={selected === 4 ? true : false}
@@ -46,7 +46,7 @@ export default function Page5_2({ match, location }) {
               setSelected(4);
             }}
           >
-            <Img src={img_plastic_clean} alt="card" width="135.2px" height="80.5px" />
+            <Img src={img_plastic_clean} alt="card" width="136px" height="100.5px" />
           </Button>
         </HStack>
         <Button
@@ -55,7 +55,7 @@ export default function Page5_2({ match, location }) {
             setSelected(5);
           }}
         >
-          <Img src={img_box_tape} alt="card" width="110.8px" height="93px" />
+          <Img src={img_box_tape} alt="card" width="136px" height="117px" />
         </Button>
       </VStack>
     </Wrapper>
@@ -64,7 +64,9 @@ export default function Page5_2({ match, location }) {
 
 const Wrapper = styled.div``;
 
-const Img = styled.img``;
+const Img = styled.img`
+  margin-bottom: 10px;
+`;
 
 const VStack = styled.div`
   position: absolute;
@@ -85,7 +87,7 @@ const HStack = styled.div`
 
 const Button = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 
   width: 152px;
