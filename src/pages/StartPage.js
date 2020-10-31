@@ -6,7 +6,7 @@ import Background from '../components/Background';
 
 export default function StartPage() {
   const answers = [-1, -1, -1, -1, -1];
-  const mbti = ['E', 'N', 'F', 'P'];
+  const mbti = ['a', 'a', 'a', 'a'];
   return (
     <Wrapper>
       <Link
