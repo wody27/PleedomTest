@@ -29,14 +29,46 @@ export default function ResultPage({ location }) {
   console.log(score);
   console.log(mbtiArray);
 
-  const [cardName, setCardName] = useState('');
-
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
   }
 
+  const getResultCard = () => {
+    const resultMBTI = mbtiArray.join('');
+    let scoreString = '';
+    if (score >= 8) {
+      scoreString = 'high';
+    } else if (score >= 4) {
+      scoreString = 'middle';
+    } else {
+      scoreString = 'low';
+    }
+
+    // switch (resultMBTI) {
+    //   case ENFJ:
+    //     const
+    //   case ENFP:
+    //   case ENTJ:
+    //   case ENTP:
+    //   case ESFJ:
+    //   case ESFP:
+    //   case ESTJ:
+    //   case ESTP:
+
+    //   case INFJ:
+    //   case INFP:
+    //   case INTJ:
+    //   case INTP:
+    //   case ISFJ:
+    //   case ISFP:
+    //   case ISTJ:
+    //   case ISTP:
+    // }
+    console.log(resultMBTI + '_' + scoreString);
+    return resultMBTI + '_' + scoreString;
+  };
   const getRandomMission = () => {
     switch (score) {
       case 10:
@@ -86,8 +118,7 @@ export default function ResultPage({ location }) {
 
   return (
     <Wrapper>
-      <Background page="ENFJ_high" alt="card" />
-
+      <Background page={getResultCard()} alt="card" />
       <Label>
         ‘작은 행동으로 큰 변화를 이끌어 낼 당신에게.’
         <br />더 나은 지구를 위한 방법, 함께해요!
@@ -98,7 +129,6 @@ export default function ResultPage({ location }) {
         <MissionLabel>Mission</MissionLabel>
         <RandomMission>{getRandomMission()}</RandomMission>
       </MissionBox>
-
       <DescriptionLabel>
         맞춤행동을 실천하고 <br />
         인스타그램을 통해 친구들과 공유하면
