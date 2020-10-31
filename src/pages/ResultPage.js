@@ -29,6 +29,8 @@ export default function ResultPage({ location }) {
   console.log(score);
   console.log(mbtiArray);
 
+  const [cardName, setCardName] = useState('');
+
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -84,7 +86,7 @@ export default function ResultPage({ location }) {
 
   return (
     <Wrapper>
-      <Background page="card" alt="card" />
+      <Background page="ENFJ_high" alt="card" />
 
       <Label>
         ‘작은 행동으로 큰 변화를 이끌어 낼 당신에게.’
@@ -121,7 +123,7 @@ const Wrapper = styled.div``;
 
 const Label = styled.div`
   position: absolute;
-  top: 820px;
+  top: 759px;
   left: 36px;
   right: 36px;
 
@@ -138,7 +140,7 @@ const Label = styled.div`
 const MissionBox = styled.div``;
 const ShadowBox = styled.div`
   position: absolute;
-  top: 895px;
+  top: 847px;
   left: 0;
   right: 0;
 
@@ -151,7 +153,7 @@ const ShadowBox = styled.div`
 `;
 const BackgroundPhoto = styled.img`
   position: absolute;
-  top: 895px;
+  top: 847px;
   left: 0;
   right: 0;
 
@@ -163,7 +165,7 @@ const BackgroundPhoto = styled.img`
 `;
 const MissionLabel = styled.div`
   position: absolute;
-  top: 968px;
+  top: 920px;
   left: 157px;
   right: 157px;
 
@@ -180,7 +182,7 @@ const MissionLabel = styled.div`
 `;
 const RandomMission = styled.div`
   position: absolute;
-  top: 1006px;
+  top: 958px;
   left: 90px;
   right: 90px;
 
@@ -198,7 +200,7 @@ const RandomMission = styled.div`
 
 const DescriptionLabel = styled.div`
   position: absolute;
-  top: 1185px;
+  top: 1137px;
   left: 64px;
   right: 64px;
 
@@ -214,7 +216,7 @@ const DescriptionLabel = styled.div`
 
 const EmphasizeLabel = styled.div`
   position: absolute;
-  top: 1240px;
+  top: 1192px;
   left: 60px;
   right: 60px;
 
@@ -230,7 +232,7 @@ const EmphasizeLabel = styled.div`
 
 const ChallengeButton = styled.div`
   position: absolute;
-  top: 1290px;
+  top: 1249px;
   left: 44px;
   right: 44px;
 
@@ -252,7 +254,7 @@ const ChallengeButton = styled.div`
 
 const QuestionLabel = styled.div`
   position: absolute;
-  top: 1382px;
+  top: 1334px;
   left: 83px;
   right: 83px;
 
@@ -268,7 +270,7 @@ const QuestionLabel = styled.div`
 
 const StoryButton = styled.div`
   position: absolute;
-  top: 1454px;
+  top: 1406px;
   left: 44px;
   right: 44px;
 
@@ -290,7 +292,7 @@ const StoryButton = styled.div`
 
 const ShareLabel = styled.div`
   position: absolute;
-  top: 1546px;
+  top: 1498px;
   right: 134px;
   left: 134px;
 
@@ -308,7 +310,7 @@ const KakaoButton = styled(KakaoShareButton)``;
 
 const MainButton = styled.div`
   position: absolute;
-  top: 1675px;
+  top: 1627px;
   left: 24px;
   right: 24px;
 

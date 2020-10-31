@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { kakaoButton } from '../images';
+import { btn_kakaoshare } from '../images';
 
 const KakaoShareButton = () => {
   const sendAPI = () => {
@@ -18,7 +18,7 @@ const KakaoShareButton = () => {
   };
   return (
     <Wrapper onClick={sendAPI}>
-      <Img src={kakaoButton} alt="kakao-share-icon" />
+      <Img src={btn_kakaoshare} alt="kakao-share-icon" />
     </Wrapper>
   );
 };
@@ -27,7 +27,7 @@ export default KakaoShareButton;
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 1589px;
+  top: 1546px;
   left: 137px;
 `;
 

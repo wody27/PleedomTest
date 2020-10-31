@@ -36,6 +36,7 @@ import {
   bg11_3,
   bg12_1,
   img_card_size,
+  ENFJ_halfSeal_high,
 } from '../images';
 
 export default function Background({ page }) {
@@ -106,8 +107,8 @@ export default function Background({ page }) {
       return <Img src={bg11_3} alt="" />;
     case '12_1':
       return <Img src={bg12_1} alt="" />;
-    case 'card':
-      return <Img src={img_card_size} alt="" />;
+    case 'ENFJ_high':
+      return <Img src={ENFJ_halfSeal_high} alt="" />;
     default:
       return <Img src="bg_start" alt="" />;
   }

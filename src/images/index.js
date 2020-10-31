@@ -85,3 +85,5 @@ export { default as INFP_whaleShark_low } from './INFP-whaleShark-low.png';
 export { default as INTJ_northBear_high } from './INTJ-northBear-high.png';
 export { default as INTJ_northBear_middle } from './INTJ-northBear-middle.png';
 export { default as INTJ_northBear_low } from './INTJ-northBear-low.png';
+
+export { default as btn_kakaoshare } from './btn-kakaoshare.png';
