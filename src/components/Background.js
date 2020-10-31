@@ -107,8 +107,119 @@ export default function Background({ page }) {
       return <Img src={bg11_3} alt="" />;
     case '12_1':
       return <Img src={bg12_1} alt="" />;
+
     case 'ENFJ_high':
       return <Img src={ENFJ_halfSeal_high} alt="" />;
+    case 'ENFJ_middle':
+      return <Img src={ENFJ_halfSeal_middle} alt="" />;
+    case 'ENFJ_low':
+      return <Img src={ENFJ_halfSeal_low} alt="" />;
+
+    case 'ENFP_high':
+      return <Img src={ENFP_otter_high} alt="" />;
+    case 'ENFP_middle':
+      return <Img src={ENFP_otter_middle} alt="" />;
+    case 'ENFP_low':
+      return <Img src={ENFP_otter_low} alt="" />;
+
+    case 'ENTJ_high':
+      return <Img src={ENTJ_bird_high} alt="" />;
+    case 'ENTJ_high':
+      return <Img src={ENTJ_bird_middle} alt="" />;
+    case 'ENTJ_low':
+      return <Img src={ENTJ_bird_low} alt="" />;
+
+    case 'ENTP_high':
+      return <Img src={ENTP_seal_high} alt="" />;
+    case 'ENTP_middle':
+      return <Img src={ENTP_seal_middle} alt="" />;
+    case 'ENTP_low':
+      return <Img src={ENTP_seal_low} alt="" />;
+
+    case 'ESFJ_high':
+      return <Img src={ESFJ_penguin_high} alt="" />;
+    case 'ESFJ_middle':
+      return <Img src={ESFJ_penguin_middle} alt="" />;
+    case 'ESFJ_low':
+      return <Img src={ESFJ_penguin_low} alt="" />;
+
+    case 'ESFP_high':
+      return <Img src={ESFP_seaDuck_high} alt="" />;
+    case 'ESFP_middle':
+      return <Img src={ESFP_seaDuck_middle} alt="" />;
+    case 'ESFP_low':
+      return <Img src={ESFP_seaDuck_low} alt="" />;
+
+    case 'ESTJ_high':
+      return <Img src={ESTJ_seaElephant_high} alt="" />;
+    case 'ESTJ_middle':
+      return <Img src={ESTJ_seaElephant_middle} alt="" />;
+    case 'ESTJ_low':
+      return <Img src={ESTJ_seaElephant_low} alt="" />;
+
+    case 'ESTP_high':
+      return <Img src={ESTP_seaLeopard_high} alt="" />;
+    case 'ESTP_middle':
+      return <Img src={ESTP_seaLeopard_middle} alt="" />;
+    case 'ESTP_low':
+      return <Img src={ESTP_seaLeopard_low} alt="" />;
+
+    case 'INFJ_high':
+      return <Img src={INFJ_dolphin_high} alt="" />;
+    case 'INFJ_middle':
+      return <Img src={INFJ_dolphin_middle} alt="" />;
+    case 'INFJ_low':
+      return <Img src={INFJ_dolphin_low} alt="" />;
+
+    case 'INFP_high':
+      return <Img src={INFP_whaleShark_high} alt="" />;
+    case 'INFP_middle':
+      return <Img src={INFP_whaleShark_middle} alt="" />;
+    case 'INFP_low':
+      return <Img src={INFP_whaleShark_low} alt="" />;
+
+    case 'INTJ_high':
+      return <Img src={INTJ_northBear_high} alt="" />;
+    case 'INTJ_middle':
+      return <Img src={INTJ_northBear_middle} alt="" />;
+    case 'INTJ_low':
+      return <Img src={INTJ_northBear_low} alt="" />;
+
+    case 'INTP_high':
+      return <Img src={INTP_crab_high} alt="" />;
+    case 'INTP_middle':
+      return <Img src={INTP_crab_middle} alt="" />;
+    case 'INTP_low':
+      return <Img src={INTP_crab_low} alt="" />;
+
+    case 'ISFJ_high':
+      return <Img src={ISFJ_seaOtter_high} alt="" />;
+    case 'ISFJ_middle':
+      return <Img src={ISFJ_seaOtter_middle} alt="" />;
+    case 'ISFJ_low':
+      return <Img src={ISFJ_seaOtter_low} alt="" />;
+
+    case 'ISFP_high':
+      return <Img src={ISFP_turtle_high} alt="" />;
+    case 'ISFP_middle':
+      return <Img src={ISFP_turtle_middle} alt="" />;
+    case 'ISFP_low':
+      return <Img src={ISFP_turtle_low} alt="" />;
+
+    case 'ISTJ_high':
+      return <Img src={ISTJ_killerWhale_high} alt="" />;
+    case 'ISTJ_middle':
+      return <Img src={ISTJ_killerWhale_middle} alt="" />;
+    case 'ISTJ_low':
+      return <Img src={ISTJ_killerWhale_low} alt="" />;
+
+    case 'ISTP_high':
+      return <Img src={ISTP_snipe_high} alt="" />;
+    case 'ISTP_middle':
+      return <Img src={ISTP_snipe_middle} alt="" />;
+    case 'ISTP_low':
+      return <Img src={ISTP_snipe_low} alt="" />;
+
     default:
       return <Img src="bg_start" alt="" />;
   }

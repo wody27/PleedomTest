@@ -105,4 +105,5 @@ export { default as ISTJ_killerWhale_low } from './ISTJ-killerWhale-low.png';
 export { default as ISTP_snipe_high } from './ISTP-snipe-high.png';
 export { default as ISTP_snipe_middle } from './ISTP-snipe-middle.png';
 export { default as ISTP_snipe_low } from './ISTP-snipe-low.png';
+
 export { default as btn_kakaoshare } from './btn-kakaoshare.png';
