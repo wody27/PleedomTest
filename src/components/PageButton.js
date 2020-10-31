@@ -53,5 +53,5 @@ const Button = styled.img`
   ${({ direction }) => (direction === 'left' ? `left: 8px;` : `right: 8px;`)};
   // pointer-events: none;
   z-index: 2;
-  ${({ direction }) => (direction === 'right' ? `opacity: 0.2;` : `opacity: 1;`)};
+  // ${({ direction }) => (direction === 'right' ? `opacity: 0.2;` : `opacity: 1;`)};
 `;
