@@ -86,4 +86,23 @@ export { default as INTJ_northBear_high } from './INTJ-northBear-high.png';
 export { default as INTJ_northBear_middle } from './INTJ-northBear-middle.png';
 export { default as INTJ_northBear_low } from './INTJ-northBear-low.png';
 
+export { default as INTP_crab_high } from './INTP-crab-high.png';
+export { default as INTP_crab_middle } from './INTP-crab-middle.png';
+export { default as INTP_crab_low } from './INTP-crab-low.png';
+
+export { default as ISFJ_seaOtter_high } from './ISFJ-seaOtter-high.png';
+export { default as ISFJ_seaOtter_middle } from './ISFJ-seaOtter-middle.png';
+export { default as ISFJ_seaOtter_low } from './ISFJ-seaOtter-low.png';
+
+export { default as ISFP_turtle_high } from './ISFP-turtle-high.png';
+export { default as ISFP_turtle_middle } from './ISFP-turtle-middle.png';
+export { default as ISFP_turtle_low } from './ISFP-turtle-low.png';
+
+export { default as ISTJ_killerWhale_high } from './ISTJ-killerWhale-high.png';
+export { default as ISTJ_killerWhale_middle } from './ISTJ-killerWhale-middle.png';
+export { default as ISTJ_killerWhale_low } from './ISTJ-killerWhale-low.png';
+
+export { default as ISTP_snipe_high } from './ISTP-snipe-high.png';
+export { default as ISTP_snipe_middle } from './ISTP-snipe-middle.png';
+export { default as ISTP_snipe_low } from './ISTP-snipe-low.png';
 export { default as btn_kakaoshare } from './btn-kakaoshare.png';
