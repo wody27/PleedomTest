@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import Background from '../components/Background';
 import KakaoShareButton from '../components/KakaoShareButton';
@@ -122,7 +123,14 @@ export default function ResultPage({ location }) {
       <StoryButton>스토리 보러가기</StoryButton>
       <ShareLabel>테스트 공유하기</ShareLabel>
       <KakaoButton />
-      <ClipboardButton src={btn_share} />
+      <CopyToClipboard
+        text="https://pleedom-test-git-master.wody27.vercel.app/"
+        onCopy={(t, result) => {
+          result && alert('클립보드에 복사되었습니다.');
+        }}
+      >
+        <ClipboardButton src={btn_share} />
+      </CopyToClipboard>
       <Link to="/">
         <MainButton>메인으로 돌아가기</MainButton>
       </Link>
