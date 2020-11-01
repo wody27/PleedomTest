@@ -170,7 +170,7 @@ export default function Background({ page }) {
 
     case 'ENTJ_high':
       return <Img src={ENTJ_bird_high} alt="" />;
-    case 'ENTJ_high':
+    case 'ENTJ_middle':
       return <Img src={ENTJ_bird_middle} alt="" />;
     case 'ENTJ_low':
       return <Img src={ENTJ_bird_low} alt="" />;

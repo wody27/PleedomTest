@@ -30,7 +30,7 @@ export default function PageButton({ pageNumber, location, number, selected, que
           },
         }}
       >
-        <Button src={left_button} direction="left" alt="button" />
+        <LeftButton src={left_button} direction="left" alt="button" />
       </Link>
       <Link
         to={{
@@ -41,17 +41,22 @@ export default function PageButton({ pageNumber, location, number, selected, que
           },
         }}
       >
-        <Button src={right_button} direction="right" alt="button" />
+        <RightButton src={right_button} direction="right" alt="button" />
       </Link>
     </Fragment>
   );
 }
 
-const Button = styled.img`
+const LeftButton = styled.img`
   position: absolute;
   top: 40px;
-  ${({ direction }) => (direction === 'left' ? `left: 8px;` : `right: 8px;`)};
   // pointer-events: none;
   z-index: 2;
   // ${({ direction }) => (direction === 'right' ? `opacity: 0.2;` : `opacity: 1;`)};
+`;
+const RightButton = styled.img`
+  position: absolute;
+  top: 40px;
+  right: 8px;
+  z-index: 2;
 `;
