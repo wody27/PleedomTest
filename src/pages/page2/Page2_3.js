@@ -10,17 +10,27 @@ export default function Page2_3({ match, location }) {
   const mbti = location.state.mbti;
   const [selected, setSelected] = useState(mbti[number]);
   const question = 'mbti';
+  let initialSetting = true;
+  initialSetting = mbti[number] === 'a' ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="2_3" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
-      {/* questionNumber={1} selectedScore={selected} */}
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 'S' ? true : false}
           onClick={() => {
             setSelected('S');
+            setDidNotAnswered(false);
           }}
         >
           엄청 크고 매끄러운 촉감이 느껴져..! <br />
@@ -31,6 +41,7 @@ export default function Page2_3({ match, location }) {
           isSelected={selected === 'N' ? true : false}
           onClick={() => {
             setSelected('N');
+            setDidNotAnswered(false);
           }}
         >
           알에서 뭐가 나올까? <br />

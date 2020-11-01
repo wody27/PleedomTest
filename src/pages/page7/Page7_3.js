@@ -10,16 +10,27 @@ export default function Page7_3({ match, location }) {
   const mbti = location.state.mbti;
   const [selected, setSelected] = useState(mbti[number]);
   const question = 'mbti';
+  let initialSetting = true;
+  initialSetting = mbti[number] === 'a' ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="7_3" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 'P' ? true : false}
           onClick={() => {
             setSelected('P');
+            setDidNotAnswered(false);
           }}
         >
           직접 둘러보면서 살래요~ 일단 출발하게요!
@@ -28,6 +39,7 @@ export default function Page7_3({ match, location }) {
           isSelected={selected === 'J' ? true : false}
           onClick={() => {
             setSelected('J');
+            setDidNotAnswered(false);
           }}
         >
           떡, 어묵, 양파, 대파,,, <br />

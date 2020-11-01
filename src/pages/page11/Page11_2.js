@@ -10,16 +10,27 @@ export default function Page11_2({ match, location }) {
   const mbti = location.state.mbti;
   const [selected, setSelected] = useState(mbti[number]);
   const question = 'mbti';
+  let initialSetting = true;
+  initialSetting = mbti[number] === 'a' ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="11_2" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 'E' ? true : false}
           onClick={() => {
             setSelected('E');
+            setDidNotAnswered(false);
           }}
         >
           오늘부터 플라스틱프리 소모임에 가입할래요!
@@ -28,6 +39,7 @@ export default function Page11_2({ match, location }) {
           isSelected={selected === 'I' ? true : false}
           onClick={() => {
             setSelected('I');
+            setDidNotAnswered(false);
           }}
         >
           플라스틱 관련 서적과 인터넷을 찾아보며 <br /> 환경에 대해 공부할래요

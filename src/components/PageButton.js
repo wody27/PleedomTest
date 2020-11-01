@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { left_button, right_button } from '../images';
 
-export default function PageButton({ pageNumber, location, number, selected, question }) {
+export default function PageButton({ pageNumber, location, number, selected, question, disableButton }) {
   const page = pageNumber.replace('/', '');
 
   const prevPage = `/${parseInt(page) - 1}`;
@@ -41,7 +41,7 @@ export default function PageButton({ pageNumber, location, number, selected, que
           },
         }}
       >
-        <RightButton src={right_button} direction="right" alt="button" />
+        <RightButton src={right_button} direction="right" alt="button" disableButton={disableButton} />
       </Link>
     </Fragment>
   );
@@ -50,13 +50,14 @@ export default function PageButton({ pageNumber, location, number, selected, que
 const LeftButton = styled.img`
   position: absolute;
   top: 40px;
-  // pointer-events: none;
   z-index: 2;
-  // ${({ direction }) => (direction === 'right' ? `opacity: 0.2;` : `opacity: 1;`)};
 `;
 const RightButton = styled.img`
   position: absolute;
   top: 40px;
   right: 8px;
   z-index: 2;
+  ${({ disableButton }) => (disableButton === true ? console.log('true') : console.log('false'))};
+  ${({ disableButton }) =>
+    disableButton === true ? `opacity: 0.2; pointer-events: none;` : `opacity: 1; pointer-events: auto;`};
 `;

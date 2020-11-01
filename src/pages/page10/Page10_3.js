@@ -10,16 +10,27 @@ export default function Page10_3({ match, location }) {
   const mbti = location.state.mbti;
   const [selected, setSelected] = useState(mbti[number]);
   const question = 'mbti';
+  let initialSetting = true;
+  initialSetting = mbti[number] === 'a' ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="10_3" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 'T' ? true : false}
           onClick={() => {
             setSelected('T');
+            setDidNotAnswered(false);
           }}
         >
           세상에.. 쓰레기섬이 얼마나 크길래 <br />
@@ -30,6 +41,7 @@ export default function Page10_3({ match, location }) {
           isSelected={selected === 'F' ? true : false}
           onClick={() => {
             setSelected('F');
+            setDidNotAnswered(false);
           }}
         >
           쓰레기섬에서 플라스틱 먹고 있는 새라니.. <br />
