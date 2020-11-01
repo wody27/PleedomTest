@@ -10,16 +10,27 @@ export default function Page3_2({ match, location }) {
   const answers = location.state.answer;
   const [selected, setSelected] = useState(answers[number]);
   const question = 'score';
+  let initialSetting = true;
+  initialSetting = answers[number] === -1 ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="3_2" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 2 ? true : false}
           onClick={() => {
             setSelected(2);
+            setDidNotAnswered(false);
           }}
         >
           저는 환경을 위해 집에 있는 수저를 사용할게요!
@@ -28,6 +39,7 @@ export default function Page3_2({ match, location }) {
           isSelected={selected === 1 ? true : false}
           onClick={() => {
             setSelected(1);
+            setDidNotAnswered(false);
           }}
         >
           일회용품 사용을 줄여야 하지만,, <br />
@@ -37,6 +49,7 @@ export default function Page3_2({ match, location }) {
           isSelected={selected === 0 ? true : false}
           onClick={() => {
             setSelected(0);
+            setDidNotAnswered(false);
           }}
         >
           저는 일회용품 사용이 제일 편하더라고요! <br />

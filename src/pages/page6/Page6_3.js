@@ -10,16 +10,27 @@ export default function Page6_3({ match, location }) {
   const answers = location.state.answer;
   const [selected, setSelected] = useState(answers[number]);
   const question = 'score';
+  let initialSetting = true;
+  initialSetting = answers[number] === -1 ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="6_3" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 2 ? true : false}
           onClick={() => {
             setSelected(2);
+            setDidNotAnswered(false);
           }}
         >
           항상 준비되어 있지! 나와라 텀블러 & 빨대! <br />
@@ -29,6 +40,7 @@ export default function Page6_3({ match, location }) {
           isSelected={selected === 1 ? true : false}
           onClick={() => {
             setSelected(1);
+            setDidNotAnswered(false);
           }}
         >
           앗! 깜빡하고 텀블러를 집에 두고 왔네요! <br />
@@ -38,6 +50,7 @@ export default function Page6_3({ match, location }) {
           isSelected={selected === 0 ? true : false}
           onClick={() => {
             setSelected(0);
+            setDidNotAnswered(false);
           }}
         >
           그냥 일회용 컵에 주세요!

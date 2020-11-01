@@ -57,7 +57,6 @@ const RightButton = styled.img`
   top: 40px;
   right: 8px;
   z-index: 2;
-  ${({ disableButton }) => (disableButton === true ? console.log('true') : console.log('false'))};
   ${({ disableButton }) =>
     disableButton === true ? `opacity: 0.2; pointer-events: none;` : `opacity: 1; pointer-events: auto;`};
 `;

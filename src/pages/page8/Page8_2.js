@@ -10,16 +10,27 @@ export default function Page8_2({ match, location }) {
   const answers = location.state.answer;
   const [selected, setSelected] = useState(answers[number]);
   const question = 'score';
+  let initialSetting = true;
+  initialSetting = answers[number] === -1 ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="8_2" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 2 ? true : false}
           onClick={() => {
             setSelected(2);
+            setDidNotAnswered(false);
           }}
         >
           롤백 사용하지 않아도 <br />
@@ -29,6 +40,7 @@ export default function Page8_2({ match, location }) {
           isSelected={selected === 1 ? true : false}
           onClick={() => {
             setSelected(1);
+            setDidNotAnswered(false);
           }}
         >
           비닐 대신 손으로 가져갈 수 있지만 <br />
@@ -38,6 +50,7 @@ export default function Page8_2({ match, location }) {
           isSelected={selected === 0 ? true : false}
           onClick={() => {
             setSelected(0);
+            setDidNotAnswered(false);
           }}
         >
           당연히 채소는 롤백에 담아 가야한다고 생각해요!

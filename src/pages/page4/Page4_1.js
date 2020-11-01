@@ -10,16 +10,27 @@ export default function Page4_1({ match, location }) {
   const answers = location.state.answer;
   const [selected, setSelected] = useState(answers[number]);
   const question = 'score';
+  let initialSetting = true;
+  initialSetting = answers[number] === -1 ? true : false;
 
+  const [didNotAnswered, setDidNotAnswered] = useState(initialSetting);
   return (
     <Wrapper>
       <Background page="4_1" />
-      <PageButton pageNumber={match.url} {...{ location }} {...{ number }} {...{ selected }} {...{ question }} />
+      <PageButton
+        pageNumber={match.url}
+        {...{ location }}
+        {...{ number }}
+        {...{ selected }}
+        {...{ question }}
+        disableButton={didNotAnswered}
+      />
       <VStack>
         <Answer
           isSelected={selected === 2 ? true : false}
           onClick={() => {
             setSelected(2);
+            setDidNotAnswered(false);
           }}
         >
           양념 묻은 용기는 재활용이 안 돼요! <br />
@@ -29,6 +40,7 @@ export default function Page4_1({ match, location }) {
           isSelected={selected === 1 ? true : false}
           onClick={() => {
             setSelected(1);
+            setDidNotAnswered(false);
           }}
         >
           세척 안하면 재활용이 안되지만… <br />
@@ -38,6 +50,7 @@ export default function Page4_1({ match, location }) {
           isSelected={selected === 0 ? true : false}
           onClick={() => {
             setSelected(0);
+            setDidNotAnswered(false);
           }}
         >
           빠르게 치우는 팁! 비닐에 한 방에 넣어버려요!
