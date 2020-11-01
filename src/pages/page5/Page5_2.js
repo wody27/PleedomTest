@@ -7,17 +7,18 @@ import { img_box_tape, img_plastic_clean, img_plastic_red, img_pet, img_toothbru
 
 export default function Page5_2({ match, location }) {
   const [selected, setSelected] = useState(0);
-
+  const [didNotAnswered, setDidNotAnswered] = useState(true);
   return (
     <Wrapper>
       <Background page="5_2" />
-      <PageButton pageNumber={match.url} {...{ location }} />
+      <PageButton pageNumber={match.url} {...{ location }} disableButton={didNotAnswered} />
       <VStack>
         <HStack>
           <Button
             isSelected={selected === 1 ? true : false}
             onClick={() => {
               setSelected(1);
+              setDidNotAnswered(false);
             }}
           >
             <Img src={img_plastic_red} alt="card" width="136px" height="99px" />
@@ -26,6 +27,7 @@ export default function Page5_2({ match, location }) {
             isSelected={selected === 2 ? true : false}
             onClick={() => {
               setSelected(2);
+              setDidNotAnswered(false);
             }}
           >
             <Img src={img_pet} alt="card" width="136px" height="118px" />
@@ -36,6 +38,7 @@ export default function Page5_2({ match, location }) {
             isSelected={selected === 3 ? true : false}
             onClick={() => {
               setSelected(3);
+              setDidNotAnswered(false);
             }}
           >
             <Img src={img_toothbrush} alt="card" width="136px" height="124.5px" />
@@ -44,6 +47,7 @@ export default function Page5_2({ match, location }) {
             isSelected={selected === 4 ? true : false}
             onClick={() => {
               setSelected(4);
+              setDidNotAnswered(false);
             }}
           >
             <Img src={img_plastic_clean} alt="card" width="136px" height="100.5px" />
@@ -53,6 +57,7 @@ export default function Page5_2({ match, location }) {
           isSelected={selected === 5 ? true : false}
           onClick={() => {
             setSelected(5);
+            setDidNotAnswered(false);
           }}
         >
           <Img src={img_box_tape} alt="card" width="136px" height="117px" />
