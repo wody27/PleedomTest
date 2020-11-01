@@ -35,7 +35,6 @@ import {
   bg11_2,
   bg11_3,
   bg12_1,
-  img_card_size,
   ENFJ_halfSeal_high,
   ENFJ_halfSeal_middle,
   ENFJ_halfSeal_low,

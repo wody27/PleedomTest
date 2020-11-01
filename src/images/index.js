@@ -107,3 +107,4 @@ export { default as ISTP_snipe_middle } from './ISTP-snipe-middle.png';
 export { default as ISTP_snipe_low } from './ISTP-snipe-low.png';
 
 export { default as btn_kakaoshare } from './btn-kakaoshare.png';
+export { default as btn_share } from './btn-share.png';

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Background from '../components/Background';
 import KakaoShareButton from '../components/KakaoShareButton';
 
-import { photo } from '../images';
+import { photo, btn_share } from '../images';
 
 export default function ResultPage({ location }) {
   // 카카오 기능
@@ -46,26 +46,6 @@ export default function ResultPage({ location }) {
       scoreString = 'low';
     }
 
-    // switch (resultMBTI) {
-    //   case ENFJ:
-    //     const
-    //   case ENFP:
-    //   case ENTJ:
-    //   case ENTP:
-    //   case ESFJ:
-    //   case ESFP:
-    //   case ESTJ:
-    //   case ESTP:
-
-    //   case INFJ:
-    //   case INFP:
-    //   case INTJ:
-    //   case INTP:
-    //   case ISFJ:
-    //   case ISFP:
-    //   case ISTJ:
-    //   case ISTP:
-    // }
     console.log(resultMBTI + '_' + scoreString);
     return resultMBTI + '_' + scoreString;
   };
@@ -142,6 +122,7 @@ export default function ResultPage({ location }) {
       <StoryButton>스토리 보러가기</StoryButton>
       <ShareLabel>테스트 공유하기</ShareLabel>
       <KakaoButton />
+      <ClipboardButton src={btn_share} />
       <Link to="/">
         <MainButton>메인으로 돌아가기</MainButton>
       </Link>
@@ -337,6 +318,15 @@ const ShareLabel = styled.div`
 `;
 
 const KakaoButton = styled(KakaoShareButton)``;
+
+const ClipboardButton = styled.img`
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 1546px;
+  right: 137px;
+`;
 
 const MainButton = styled.div`
   position: absolute;

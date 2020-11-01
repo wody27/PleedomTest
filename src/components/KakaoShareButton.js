@@ -16,22 +16,16 @@ const KakaoShareButton = () => {
       });
     }
   };
-  return (
-    <Wrapper onClick={sendAPI}>
-      <Img src={btn_kakaoshare} alt="kakao-share-icon" />
-    </Wrapper>
-  );
+  return <Img src={btn_kakaoshare} onClick={sendAPI} alt="kakao-share-icon" />;
 };
 
 export default KakaoShareButton;
 
-const Wrapper = styled.div`
+const Img = styled.img`
   position: absolute;
   top: 1546px;
   left: 137px;
-`;
 
-const Img = styled.img`
-  width: 29px;
-  height: 29px;
+  width: 40px;
+  height: 40px;
 `;
