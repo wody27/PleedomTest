@@ -163,11 +163,8 @@ const ImageCardStoreButton = styled.div`
 const Label = styled.div`
   position: absolute;
   top: 759px;
-
-  // 가운데 정렬
-  margin: auto;
-  width: 90%;
-
+  left: 0;
+  right: 0;
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -223,11 +220,12 @@ const MissionLabel = styled.div`
   text-align: center;
   color: #3acce1;
 `;
+
 const RandomMission = styled.div`
   position: absolute;
   top: 958px;
-  left: 90px;
-  right: 90px;
+  left: 50px;
+  right: 50px;
 
   z-index: 4;
 
