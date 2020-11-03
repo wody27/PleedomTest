@@ -141,10 +141,12 @@ export default function ResultPage({ location }) {
 const Wrapper = styled.div``;
 
 const Label = styled.div`
-  position: absolute;
+  position: relative;
   top: 759px;
-  left: 36px;
-  right: 36px;
+
+  // 가운데 정렬
+  margin: auto;
+  width: 90%;
 
   font-size: 16px;
   font-weight: 500;
@@ -159,7 +161,7 @@ const Label = styled.div`
 const MissionBox = styled.div``;
 const ShadowBox = styled.div`
   position: absolute;
-  top: 847px;
+  top: 850px;
   left: 0;
   right: 0;
 
@@ -170,24 +172,28 @@ const ShadowBox = styled.div`
   object-fit: contain;
   opacity: 0.5;
 `;
+
 const BackgroundPhoto = styled.img`
   position: absolute;
-  top: 847px;
+  top: 850px;
   left: 0;
   right: 0;
 
   z-index: 2;
 
   height: 250px;
-  object-fit: contain;
+  width: 100%;
   opacity: 0.8;
 `;
-const MissionLabel = styled.div`
-  position: absolute;
-  top: 920px;
-  left: 157px;
-  right: 157px;
 
+const MissionLabel = styled.div`
+  position: relative;
+  top: 850px;
+  // left: 157px;
+  // right: 157px;
+
+  margin: auto;
+  width: 90%;
   z-index: 4;
 
   font-size: 16px;
@@ -200,10 +206,10 @@ const MissionLabel = styled.div`
   color: #3acce1;
 `;
 const RandomMission = styled.div`
-  position: absolute;
-  top: 958px;
-  left: 90px;
-  right: 90px;
+  position: relative;
+  top: 870px;
+  // left: 90px;
+  // right: 90px;
 
   z-index: 4;
 
