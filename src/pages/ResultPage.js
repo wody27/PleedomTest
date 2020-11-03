@@ -100,6 +100,7 @@ export default function ResultPage({ location }) {
   return (
     <Wrapper>
       <Background page={getResultCard()} alt="card" />
+      <ImageCardStoreButton>동물 저장</ImageCardStoreButton>
       <Label>
         ‘작은 행동으로 큰 변화를 이끌어 낼 당신에게.’
         <br />더 나은 지구를 위한 방법, 함께해요!
@@ -140,8 +141,27 @@ export default function ResultPage({ location }) {
 
 const Wrapper = styled.div``;
 
-const Label = styled.div`
+const ImageCardStoreButton = styled.div`
   position: relative;
+  top: 628px;
+  margin: auto;
+  width: 30%;
+  line-height: 54px;
+  border-radius: 8px;
+  border: solid 1px #ffffff;
+  background-color: #2396a7;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+`;
+
+const Label = styled.div`
+  position: absolute;
   top: 759px;
 
   // 가운데 정렬
@@ -187,13 +207,11 @@ const BackgroundPhoto = styled.img`
 `;
 
 const MissionLabel = styled.div`
-  position: relative;
-  top: 850px;
-  // left: 157px;
-  // right: 157px;
+  position: absolute;
+  top: 920px;
+  left: 50px;
+  right: 50px;
 
-  margin: auto;
-  width: 90%;
   z-index: 4;
 
   font-size: 16px;
@@ -206,10 +224,10 @@ const MissionLabel = styled.div`
   color: #3acce1;
 `;
 const RandomMission = styled.div`
-  position: relative;
-  top: 870px;
-  // left: 90px;
-  // right: 90px;
+  position: absolute;
+  top: 958px;
+  left: 90px;
+  right: 90px;
 
   z-index: 4;
 
@@ -226,8 +244,8 @@ const RandomMission = styled.div`
 const DescriptionLabel = styled.div`
   position: absolute;
   top: 1137px;
-  left: 64px;
-  right: 64px;
+  left: 50px;
+  right: 50px;
 
   font-size: 16px;
   font-weight: normal;
@@ -242,8 +260,8 @@ const DescriptionLabel = styled.div`
 const EmphasizeLabel = styled.div`
   position: absolute;
   top: 1192px;
-  left: 60px;
-  right: 60px;
+  left: 50px;
+  right: 50px;
 
   font-size: 18px;
   font-weight: 500;
@@ -280,8 +298,8 @@ const ChallengeButton = styled.div`
 const QuestionLabel = styled.div`
   position: absolute;
   top: 1334px;
-  left: 83px;
-  right: 83px;
+  left: 50px;
+  right: 50px;
 
   font-size: 16px;
   font-weight: 500;
@@ -318,8 +336,8 @@ const StoryButton = styled.div`
 const ShareLabel = styled.div`
   position: absolute;
   top: 1498px;
-  right: 134px;
-  left: 134px;
+  right: 50px;
+  left: 50px;
 
   font-size: 16px;
   font-weight: bold;
@@ -327,7 +345,7 @@ const ShareLabel = styled.div`
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
   color: #3acce1;
 `;
 
