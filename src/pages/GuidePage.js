@@ -42,12 +42,20 @@ const Wrapper = styled.div``;
 
 const LeftButton = styled.img`
   position: absolute;
+  @media screen and (max-width: 321px) {
+    top: 31px;
+    left: 3px;
+  }
   top: 40px;
   left: 8px;
 `;
 
 const RightButton = styled.img`
   position: absolute;
+  @media screen and (max-width: 321px) {
+    top: 31px;
+    right: 3px;
+  }
   top: 40px;
   right: 8px;
 `;

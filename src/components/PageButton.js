@@ -50,13 +50,23 @@ export default function PageButton({ pageNumber, location, number, selected, que
 const LeftButton = styled.img`
   position: absolute;
   top: 40px;
+  @media screen and (max-width: 321px) {
+    top: 31px;
+    left: 3px;
+  }
+
   z-index: 2;
 `;
 const RightButton = styled.img`
   position: absolute;
   top: 40px;
   right: 8px;
+  @media screen and (max-width: 321px) {
+    top: 31px;
+    right: 3px;
+  }
+
   z-index: 2;
   ${({ disableButton }) =>
-    disableButton === true ? `opacity: 0.2; pointer-events: none;` : `opacity: 1; pointer-events: auto;`};
+    disableButton === true ? `opacity: 0.4; pointer-events: none;` : `opacity: 1; pointer-events: auto;`};
 `;

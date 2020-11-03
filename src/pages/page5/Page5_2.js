@@ -76,9 +76,11 @@ const Img = styled.img`
 const VStack = styled.div`
   position: absolute;
   top: 179px;
-  left: 34px;
+  left: 25px;
   right: 25px;
-
+  @media screen and (max-width: 321px) {
+    top: 150px;
+  }
   z-index: 2;
 `;
 
@@ -87,7 +89,8 @@ const HStack = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  margin-bottom: 12px;
+  z-index: 6;
+  margin-bottom: 20px;
 `;
 
 const Button = styled.div`
@@ -97,7 +100,10 @@ const Button = styled.div`
 
   width: 152px;
   height: 152px;
-
+  @media screen and (max-width: 321px) {
+    width: 125px;
+    height: 125px;
+  }
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.08);
 

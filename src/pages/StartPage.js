@@ -29,6 +29,9 @@ const Wrapper = styled.div``;
 
 const NextButton = styled.div`
   position: absolute;
+  @media screen and (max-width: 320px) {
+    top: 410px;
+  }
   top: 497px;
   left: 66px;
   right: 66px;
