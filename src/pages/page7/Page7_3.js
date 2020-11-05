@@ -80,6 +80,11 @@ const VStack = styled.div`
     top: 180px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 190px;
+  }
+
   z-index: 4;
 
   display: flex;

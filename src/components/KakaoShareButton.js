@@ -65,6 +65,12 @@ const Img = styled.img`
     left: 155px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1615px;
+    left: 160px;
+  }
+
   @media (min-width: 350px) and (max-width: 360px) {
     left: 130px;
   }

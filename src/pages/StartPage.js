@@ -55,6 +55,11 @@ const NextButton = styled.div`
     top: 500px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 550px;
+  }
+
   left: 0px;
   right: 0px;
   margin: 0 35px;

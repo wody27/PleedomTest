@@ -183,6 +183,12 @@ const Label = styled.div`
     font-size: 17px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 840px;
+    font-size: 17px;
+  }
+
   font-family: NotoSansCJKkr;
   @font-face {
     font-family: NotoSansCJKkr;
@@ -246,6 +252,11 @@ const ShadowBox = styled.div`
     top: 910px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 920px;
+  }
+
   z-index: 3;
 
   background-color: black;
@@ -290,6 +301,11 @@ const BackgroundPhoto = styled.img`
     top: 910px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 920px;
+  }
+
   z-index: 2;
 
   height: 250px;
@@ -332,6 +348,12 @@ const MissionLabel = styled.div`
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 980px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 990px;
+    font-size: 20px;
   }
 
   z-index: 4;
@@ -390,6 +412,12 @@ const RandomMission = styled.div`
     top: 1018px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1028px;
+    font-size: 20px;
+  }
+
   z-index: 4;
 
   font-family: 'Noto Sans KR', sans-serif !important;
@@ -444,6 +472,12 @@ const DescriptionLabel = styled.div`
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1197px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1207px;
+    font-size: 17px;
   }
 
   @font-face {
@@ -507,6 +541,12 @@ const EmphasizeLabel = styled.div`
     top: 1252px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1262px;
+    font-size: 19px;
+  }
+
   font-family: NotoSansCJKkr;
   @font-face {
     font-family: NotoSansCJKkr;
@@ -566,6 +606,12 @@ const ChallengeButton = styled.div`
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1309px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1319px;
+    font-size: 16px;
   }
 
   border-radius: 6px;
@@ -635,6 +681,12 @@ const QuestionLabel = styled.div`
     top: 1394px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1404px;
+    font-size: 16px;
+  }
+
   font-family: NotoSansCJKkr;
   @font-face {
     font-family: NotoSansCJKkr;
@@ -694,6 +746,12 @@ const StoryButton = styled.div`
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1466px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1476px;
+    font-size: 16px;
   }
 
   border-radius: 6px;
@@ -763,6 +821,12 @@ const ShareLabel = styled.div`
     top: 1558px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1568px;
+    font-size: 17px;
+  }
+
   font-family: 'Noto Sans KR', sans-serif !important;
   @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
   font-size: 16px;
@@ -824,6 +888,12 @@ const ClipboardButton = styled.img`
     right: 155px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1615px;
+    right: 160px;
+  }
+
   @media (min-width: 350px) and (max-width: 360px) {
     right: 130px;
   }
@@ -868,6 +938,12 @@ const MainButton = styled.div`
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1687px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 1697px;
+    font-size: 16px;
   }
 
   margin-bottom: 33px;

@@ -187,6 +187,12 @@ const Button = styled.div`
     height: 165px;
   }
 
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    width: 170px;
+    height: 170px;
+  }
+
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.08);
 

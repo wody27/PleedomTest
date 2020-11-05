@@ -103,7 +103,7 @@ export default function App() {
 }
 
 const Wrapper = styled.div`
-  @media screen and (min-width: 415px) {
+  @media screen and (min-width: 429px) {
     display: none;
     z-index: 0;
   }
@@ -138,7 +138,7 @@ const Wrapper = styled.div`
 `;
 
 const Web = styled.div`
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 428px) {
     display: none;
     z-index: 0;
   }
