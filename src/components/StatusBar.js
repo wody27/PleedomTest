@@ -12,6 +12,8 @@ import {
   statusbar8,
   statusbar9,
   statusbar10,
+  statusbar11,
+  statusbar12,
 } from '../images';
 
 export default function StatusBar({ section }) {
@@ -36,6 +38,10 @@ export default function StatusBar({ section }) {
       return <Wrapper src={statusbar9} />;
     case '10':
       return <Wrapper src={statusbar10} />;
+    case '11':
+      return <Wrapper src={statusbar11} />;
+    case '12':
+      return <Wrapper src={statusbar12} />;
     default:
       return <Wrapper src={statusbar1} />;
   }

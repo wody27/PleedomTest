@@ -31,7 +31,7 @@ const Wrapper = styled.div`
 
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) {
-    ${({ line }) => (line === '7' ? 'top:550px;' : 'top: 619px;')}
+    ${({ line }) => (line === '7' ? 'top:500px;' : 'top: 619px;')}
     font-size: 20px;
   }
 
