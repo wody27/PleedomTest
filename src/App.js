@@ -107,6 +107,34 @@ const Wrapper = styled.div`
     display: none;
     z-index: 0;
   }
+
+  font-family: S-CoreDream-3Light;
+  @font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    font-size: 14px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    font-size: 16px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    font-size: 18px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    font-size: 20px;
+  }
 `;
 
 const Web = styled.div`

@@ -29,13 +29,30 @@ const Wrapper = styled.div``;
 
 const NextButton = styled.div`
   position: absolute;
-  @media screen and (max-width: 320px) {
-    top: 410px;
-  }
-  top: 497px;
-  left: 66px;
-  right: 66px;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 400px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 669px) {
+    top: 470px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 670px) and (max-height: 736px) {
+    top: 520px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 485px;
+  }
+
+  left: 0px;
+  right: 0px;
+  margin: 0 35px;
   z-index: 1;
 
   border-radius: 6px;
