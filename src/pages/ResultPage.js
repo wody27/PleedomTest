@@ -100,7 +100,7 @@ export default function ResultPage({ location }) {
   return (
     <Wrapper>
       <Background page={getResultCard()} alt="card" />
-      <ImageCardStoreButton>동물 저장</ImageCardStoreButton>
+      {/* <ImageCardStoreButton>동물 저장</ImageCardStoreButton> */}
       <Label>
         ‘작은 행동으로 큰 변화를 이끌어 낼 당신에게.’
         <br />더 나은 지구를 위한 방법, 함께해요!
@@ -165,6 +165,42 @@ const Label = styled.div`
   top: 759px;
   left: 0;
   right: 0;
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 640px;
+    font-size: 13px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 750px;
+    font-size: 16px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 820px;
+    font-size: 17px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 759px;
+    font-size: 16px;
+  }
+
+  font-family: NotoSansCJKkr;
+  @font-face {
+    font-family: NotoSansCJKkr;
+    src: local(NotoSansCJKkr-Regular), url(/path/to/NotoSansCJKkr-Regular.woff2) format('woff2'),
+      url(/path/to/NotoSansCJKkr-Regular.woff) format('woff'),
+      url(/path/to/NotoSansCJKkr-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -182,6 +218,26 @@ const ShadowBox = styled.div`
   left: 0;
   right: 0;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 720px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 850px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 900px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 850px;
+  }
+
   z-index: 3;
 
   background-color: black;
@@ -196,6 +252,26 @@ const BackgroundPhoto = styled.img`
   left: 0;
   right: 0;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 720px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 850px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 900px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 850px;
+  }
+
   z-index: 2;
 
   height: 250px;
@@ -209,7 +285,30 @@ const MissionLabel = styled.div`
   left: 50px;
   right: 50px;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 780px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 920px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 980px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 920px;
+  }
+
   z-index: 4;
+
+  font-family: 'Noto Sans KR', sans-serif !important;
+  @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
   font-size: 16px;
   font-weight: 900;
@@ -224,10 +323,37 @@ const MissionLabel = styled.div`
 const RandomMission = styled.div`
   position: absolute;
   top: 958px;
-  left: 50px;
-  right: 50px;
+  left: 20px;
+  right: 20px;
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 818px;
+    font-size: 18px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 958px;
+    font-size: 20px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1020px;
+    font-size: 20px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 958px;
+    font-size: 20px;
+  }
 
   z-index: 4;
+
+  font-family: 'Noto Sans KR', sans-serif !important;
+  @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
   font-size: 20px;
   font-weight: normal;
@@ -242,8 +368,42 @@ const RandomMission = styled.div`
 const DescriptionLabel = styled.div`
   position: absolute;
   top: 1137px;
-  left: 50px;
-  right: 50px;
+  left: 20px;
+  right: 20px;
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 997px;
+    font-size: 12px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1137px;
+    font-size: 16px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1177px;
+    font-size: 17px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1137px;
+    font-size: 16px;
+  }
+
+  @font-face {
+    font-family: NotoSansCJKkr;
+    src: local(NotoSansCJKkr-Regular), url(/path/to/NotoSansCJKkr-Regular.woff2) format('woff2'),
+      url(/path/to/NotoSansCJKkr-Regular.woff) format('woff'),
+      url(/path/to/NotoSansCJKkr-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
 
   font-size: 16px;
   font-weight: normal;
@@ -261,6 +421,40 @@ const EmphasizeLabel = styled.div`
   left: 50px;
   right: 50px;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 1052px;
+    font-size: 14px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1192px;
+    font-size: 18px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1232px;
+    font-size: 19px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1192px;
+    font-size: 18px;
+  }
+
+  font-family: NotoSansCJKkr;
+  @font-face {
+    font-family: NotoSansCJKkr;
+    src: local(NotoSansCJKkr-Medium), url(/path/to/NotoSansCJKkr-Medium.woff2) format('woff2'),
+      url(/path/to/NotoSansCJKkr-Medium.woff) format('woff'), url(/path/to/NotoSansCJKkr-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
   font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
@@ -277,9 +471,43 @@ const ChallengeButton = styled.div`
   left: 44px;
   right: 44px;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 1105px;
+    font-size: 13px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1249px;
+    font-size: 15px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1289px;
+    font-size: 16px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1249px;
+    font-size: 15px;
+  }
+
   border-radius: 6px;
   border: solid 0.3px #ffffff;
   background-color: #3acce1;
+
+  font-family: S-CoreDream-6;
+  @font-face {
+    font-family: S-CoreDream-6;
+    src: local(S-CoreDream-6Bold), url(/path/to/S-CoreDream-6Bold.woff2) format('woff2'),
+      url(/path/to/S-CoreDream-6Bold.woff) format('woff'), url(/path/to/S-CoreDream-6Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+  }
 
   font-size: 15px;
   font-weight: bold;
@@ -299,6 +527,39 @@ const QuestionLabel = styled.div`
   left: 50px;
   right: 50px;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 1190px;
+    font-size: 14px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1334px;
+    font-size: 16px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1374px;
+    font-size: 16px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1334px;
+    font-size: 16px;
+  }
+  font-family: NotoSansCJKkr;
+  @font-face {
+    font-family: NotoSansCJKkr;
+    src: local(NotoSansCJKkr-Regular), url(/path/to/NotoSansCJKkr-Regular.woff2) format('woff2'),
+      url(/path/to/NotoSansCJKkr-Regular.woff) format('woff'),
+      url(/path/to/NotoSansCJKkr-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -315,9 +576,43 @@ const StoryButton = styled.div`
   left: 44px;
   right: 44px;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 1250px;
+    font-size: 13px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1406px;
+    font-size: 15px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1440px;
+    font-size: 16px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1406px;
+    font-size: 15px;
+  }
+
   border-radius: 6px;
   border: solid 0.3px #ffffff;
   background-color: #3acce1;
+
+  font-family: S-CoreDream-6;
+  @font-face {
+    font-family: S-CoreDream-6;
+    src: local(S-CoreDream-6Bold), url(/path/to/S-CoreDream-6Bold.woff2) format('woff2'),
+      url(/path/to/S-CoreDream-6Bold.woff) format('woff'), url(/path/to/S-CoreDream-6Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+  }
 
   font-size: 15px;
   font-weight: bold;
@@ -337,6 +632,32 @@ const ShareLabel = styled.div`
   right: 50px;
   left: 50px;
 
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 1330px;
+    font-size: 14px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1498px;
+    font-size: 16px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1530px;
+    font-size: 17px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1498px;
+    font-size: 16px;
+  }
+
+  font-family: 'Noto Sans KR', sans-serif !important;
+  @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -354,8 +675,35 @@ const ClipboardButton = styled.img`
   height: 40px;
 
   position: absolute;
-  top: 1546px;
-  right: 137px;
+  top: 1545px;
+  right: 140px;
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 1375px;
+    right: 125px;
+
+    width: 30px;
+    height: 30px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1545px;
+    right: 140px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1585px;
+    right: 160px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1545px;
+    right: 140px;
+  }
 `;
 
 const MainButton = styled.div`
@@ -363,6 +711,30 @@ const MainButton = styled.div`
   top: 1627px;
   left: 24px;
   right: 24px;
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+    top: 1430px;
+    font-size: 13px;
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+    top: 1627px;
+    font-size: 15px;
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 1670px;
+    font-size: 16px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) and (max-height: 812px) {
+    top: 1627px;
+    font-size: 15px;
+  }
 
   margin-bottom: 33px;
 
