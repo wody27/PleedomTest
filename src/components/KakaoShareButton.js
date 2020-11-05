@@ -53,7 +53,13 @@ const Img = styled.img`
     left: 140px;
   }
 
-  @media (max-width: 360px) {
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1605px;
+    left: 155px;
+  }
+
+  @media (min-width: 350px) and (max-width: 360px) {
     left: 130px;
   }
   width: 40px;

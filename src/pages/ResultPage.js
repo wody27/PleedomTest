@@ -141,25 +141,6 @@ export default function ResultPage({ location }) {
 
 const Wrapper = styled.div``;
 
-const ImageCardStoreButton = styled.div`
-  position: relative;
-  top: 628px;
-  margin: auto;
-  width: 30%;
-  line-height: 54px;
-  border-radius: 8px;
-  border: solid 1px #ffffff;
-  background-color: #2396a7;
-  text-align: center;
-
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-`;
-
 const Label = styled.div`
   position: absolute;
   top: 759px;
@@ -201,6 +182,11 @@ const Label = styled.div`
     font-stretch: normal;
   }
 
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 820px;
+  }
+
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -238,6 +224,11 @@ const ShadowBox = styled.div`
     top: 850px;
   }
 
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 910px;
+  }
+
   z-index: 3;
 
   background-color: black;
@@ -272,6 +263,11 @@ const BackgroundPhoto = styled.img`
     top: 850px;
   }
 
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 910px;
+  }
+
   z-index: 2;
 
   height: 250px;
@@ -303,6 +299,11 @@ const MissionLabel = styled.div`
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) and (max-height: 812px) {
     top: 920px;
+  }
+
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 980px;
   }
 
   z-index: 4;
@@ -350,6 +351,11 @@ const RandomMission = styled.div`
     font-size: 20px;
   }
 
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1018px;
+  }
+
   z-index: 4;
 
   font-family: 'Noto Sans KR', sans-serif !important;
@@ -393,6 +399,11 @@ const DescriptionLabel = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1137px;
     font-size: 16px;
+  }
+
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1197px;
   }
 
   @font-face {
@@ -445,6 +456,11 @@ const EmphasizeLabel = styled.div`
     font-size: 18px;
   }
 
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1252px;
+  }
+
   font-family: NotoSansCJKkr;
   @font-face {
     font-family: NotoSansCJKkr;
@@ -493,6 +509,11 @@ const ChallengeButton = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1249px;
     font-size: 15px;
+  }
+
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1309px;
   }
 
   border-radius: 6px;
@@ -550,6 +571,12 @@ const QuestionLabel = styled.div`
     top: 1334px;
     font-size: 16px;
   }
+
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1394px;
+  }
+
   font-family: NotoSansCJKkr;
   @font-face {
     font-family: NotoSansCJKkr;
@@ -598,6 +625,11 @@ const StoryButton = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1406px;
     font-size: 15px;
+  }
+
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1466px;
   }
 
   border-radius: 6px;
@@ -656,6 +688,11 @@ const ShareLabel = styled.div`
     font-size: 16px;
   }
 
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1558px;
+  }
+
   font-family: 'Noto Sans KR', sans-serif !important;
   @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
   font-size: 16px;
@@ -705,7 +742,13 @@ const ClipboardButton = styled.img`
     right: 140px;
   }
 
-  @media (max-width: 360px) {
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1605px;
+    right: 155px;
+  }
+
+  @media (min-width: 350px) and (max-width: 360px) {
     right: 130px;
   }
 `;
@@ -738,6 +781,11 @@ const MainButton = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1627px;
     font-size: 15px;
+  }
+
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 1687px;
   }
 
   margin-bottom: 33px;

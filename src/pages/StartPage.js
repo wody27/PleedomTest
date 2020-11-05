@@ -50,6 +50,11 @@ const NextButton = styled.div`
     top: 485px;
   }
 
+  // Pixel 2 XL 사이즈
+  @media (min-height: 814px) {
+    top: 500px;
+  }
+
   left: 0px;
   right: 0px;
   margin: 0 35px;

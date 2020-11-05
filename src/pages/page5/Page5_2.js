@@ -99,6 +99,13 @@ const VStack = styled.div`
   @media (min-height: 737px) {
   }
 
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    top: 195px;
+    left: 26px;
+    right: 26px;
+  }
+
   z-index: 2;
 `;
 
@@ -156,10 +163,18 @@ const Button = styled.div`
   @media (min-height: 737px) {
   }
 
-  @media (max-width: 360px) {
+  // Moto G4 사이즈
+  @media (min-width: 350px) and (max-width: 360px) {
     width: 142px;
     height: 142px;
   }
+
+  // Pixel2 XL 사이즈
+  @media (min-width: 411px) and (max-width: 413px) {
+    width: 165px;
+    height: 165px;
+  }
+
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.08);
 

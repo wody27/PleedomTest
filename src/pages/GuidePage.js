@@ -69,6 +69,12 @@ const LeftButton = styled.img`
     top: 40px;
     left: 6px;
   }
+
+  // Pixel 2 XL 사이즈
+  @media (min-height: 814px) {
+    top: 47px;
+    left: 10px;
+  }
 `;
 
 const RightButton = styled.img`
@@ -99,5 +105,11 @@ const RightButton = styled.img`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 40px;
     right: 6px;
+  }
+
+  // Pixel 2 XL 사이즈
+  @media (min-height: 814px) {
+    top: 47px;
+    right: 10px;
   }
 `;
