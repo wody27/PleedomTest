@@ -811,7 +811,7 @@ const ShareLabel = styled.div`
   }
 
   // 아이폰 11
-  @media (min-height: 880px) {
+  @media (min-width: 414px) and (max-width: 415px) {
     top: 1538px;
     font-size: 17px;
   }
