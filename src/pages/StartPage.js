@@ -47,7 +47,7 @@ const NextButton = styled.div`
 
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) and (max-height: 812px) {
-    top: 485px;
+    top: 470px;
   }
 
   // Pixel 2 XL 사이즈
