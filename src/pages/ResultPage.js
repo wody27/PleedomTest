@@ -171,6 +171,12 @@ const Label = styled.div`
     font-size: 16px;
   }
 
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 813px) {
+    top: 770px;
+    font-size: 16px;
+  }
+
   font-family: NotoSansCJKkr;
   @font-face {
     font-family: NotoSansCJKkr;
