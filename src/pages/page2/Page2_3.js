@@ -60,6 +60,7 @@ const VStack = styled.div`
   top: 179px;
   left: 16px;
   right: 16px;
+
   // 더 작은 사이즈들
   @media (max-height: 568px) {
     top: 155px;
