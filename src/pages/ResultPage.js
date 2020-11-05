@@ -704,6 +704,10 @@ const ClipboardButton = styled.img`
     top: 1545px;
     right: 140px;
   }
+
+  @media (max-width: 360px) {
+    right: 130px;
+  }
 `;
 
 const MainButton = styled.div`

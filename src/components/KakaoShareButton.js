@@ -52,6 +52,10 @@ const Img = styled.img`
     top: 1545px;
     left: 140px;
   }
+
+  @media (max-width: 360px) {
+    left: 130px;
+  }
   width: 40px;
   height: 40px;
 `;

@@ -156,6 +156,10 @@ const Button = styled.div`
   @media (min-height: 737px) {
   }
 
+  @media (max-width: 360px) {
+    width: 142px;
+    height: 142px;
+  }
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.08);
 
