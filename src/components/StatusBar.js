@@ -14,22 +14,22 @@ const Wrapper = styled.img`
 
   // 더 작은 사이즈들
   @media (max-height: 568px) {
-    top: 530px;
+    top: 500px;
   }
 
   // 아이폰 6,7,8,SE 사이즈
   @media (min-height: 569px) and (max-height: 669px) {
-    top: 610px;
+    top: 570px;
   }
 
   // 아이폰 plus 사이즈
   @media (min-height: 670px) and (max-height: 736px) {
-    top: 670px;
+    top: 640px;
   }
 
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) {
-    top: 753px;
+    top: 723px;
   }
 
   width: 100%;

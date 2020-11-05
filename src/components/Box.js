@@ -13,25 +13,25 @@ const Wrapper = styled.div`
 
   // 더 작은 사이즈들
   @media (max-height: 568px) {
-    ${({ line }) => (line === '7' ? 'top: 360px;' : 'top: 450px;')}
+    ${({ line }) => (line === '7' ? 'top: 360px;' : 'top: 420px;')}
     font-size: 17px;
   }
 
   // 아이폰 6,7,8,SE 사이즈
   @media (min-height: 569px) and (max-height: 668px) {
-    ${({ line }) => (line === '7' ? 'top: 440px;' : 'top: 530px;')}
+    ${({ line }) => (line === '7' ? 'top: 440px;' : 'top: 500px;')}
     font-size: 20px;
   }
 
   // 아이폰 plus 사이즈
   @media (min-height: 669px) and (max-height: 736px) {
-    ${({ line }) => (line === '7' ? 'top: 500px;' : 'top: 590px;')}
+    ${({ line }) => (line === '7' ? 'top: 500px;' : 'top: 560px;')}
     font-size: 21px;
   }
 
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) {
-    ${({ line }) => (line === '7' ? 'top:550px;' : 'top: 649px;')}
+    ${({ line }) => (line === '7' ? 'top:550px;' : 'top: 619px;')}
     font-size: 20px;
   }
 
