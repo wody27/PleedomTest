@@ -14,21 +14,25 @@ const Wrapper = styled.div`
   // 더 작은 사이즈들
   @media (max-height: 568px) {
     ${({ line }) => (line === '7' ? 'top: 360px;' : 'top: 450px;')}
+    font-size: 17px;
   }
 
   // 아이폰 6,7,8,SE 사이즈
   @media (min-height: 569px) and (max-height: 668px) {
     ${({ line }) => (line === '7' ? 'top: 440px;' : 'top: 530px;')}
+    font-size: 20px;
   }
 
   // 아이폰 plus 사이즈
   @media (min-height: 669px) and (max-height: 736px) {
     ${({ line }) => (line === '7' ? 'top: 500px;' : 'top: 590px;')}
+    font-size: 21px;
   }
 
   // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
+  @media (min-height: 737px) {
     ${({ line }) => (line === '7' ? 'top:550px;' : 'top: 649px;')}
+    font-size: 20px;
   }
 
   margin: 0 30px;
@@ -38,6 +42,21 @@ const Wrapper = styled.div`
 
   background-color: rgba(255, 255, 255, 0.72);
 
+  font-family: S-CoreDream-3;
+  @font-face {
+    font-family: S-CoreDream-3;
+    src: local(S-CoreDream-3Light), url(/path/to/S-CoreDream-3Light.woff2) format('woff2'),
+      url(/path/to/S-CoreDream-3Light.woff) format('woff'), url(/path/to/S-CoreDream-3Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+  font-weight: 345;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
   text-align: center;
   color: #4e5e62;
 `;

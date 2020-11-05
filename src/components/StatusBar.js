@@ -28,7 +28,7 @@ const Wrapper = styled.img`
   }
 
   // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
+  @media (min-height: 737px) {
     top: 753px;
   }
 
