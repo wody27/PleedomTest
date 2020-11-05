@@ -148,38 +148,26 @@ const Label = styled.div`
   right: 0;
 
   // 더 작은 사이즈들
-  @media (max-height: 568px) {
+  @media (max-width: 330px) {
     top: 640px;
     font-size: 13px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
-    top: 750px;
+  // Galaxy S5
+  @media (min-width: 350px) and (max-width: 370px) {
+    top: 740px;
     font-size: 16px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 740px;
+    font-size: 16px;
+  }
+
+  // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 820px;
-    font-size: 17px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 759px;
-    font-size: 16px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 813px) {
-    top: 770px;
-    font-size: 16px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 810px;
     font-size: 17px;
   }
 
@@ -200,11 +188,6 @@ const Label = styled.div`
     font-stretch: normal;
   }
 
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 820px;
-  }
-
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -222,34 +205,24 @@ const ShadowBox = styled.div`
   left: 0;
   right: 0;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
+  // 아이폰 5
+  @media (max-width: 330px) {
     top: 720px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 850px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 830px;
+  }
+
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 900px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 850px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 890px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 910px;
   }
 
   // 아이폰 12 Pro Max
@@ -271,34 +244,24 @@ const BackgroundPhoto = styled.img`
   left: 0;
   right: 0;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
+  // 아이폰 5
+  @media (max-width: 330px) {
     top: 720px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 850px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 830px;
+  }
+
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 900px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 850px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 890px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 910px;
   }
 
   // 아이폰 12 Pro Max
@@ -319,41 +282,29 @@ const MissionLabel = styled.div`
   left: 50px;
   right: 50px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
+  // 아이폰 5
+  @media (max-width: 330px) {
     top: 780px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
-    top: 920px;
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
+    top: 910px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 980px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 890px;
   }
 
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 920px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 960px;
-    font-size: 20px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 980px;
   }
 
   // 아이폰 12 Pro Max
   @media (min-width: 428px) {
-    top: 990px;
-    font-size: 20px;
+    top: 980px;
   }
 
   z-index: 4;
@@ -377,39 +328,27 @@ const RandomMission = styled.div`
   left: 20px;
   right: 20px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
+  // 아이폰 5
+  @media (max-width: 330px) {
     top: 818px;
-    font-size: 18px;
+    font-size: 17px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 958px;
+  }
+
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 938px;
     font-size: 20px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 1020px;
     font-size: 20px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 958px;
-    font-size: 20px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 998px;
-    font-size: 20px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1018px;
   }
 
   // 아이폰 12 Pro Max
@@ -439,39 +378,28 @@ const DescriptionLabel = styled.div`
   left: 20px;
   right: 20px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
+  // 아이폰 5
+  @media (max-width: 330px) {
     top: 997px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 1137px;
     font-size: 16px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 1177px;
-    font-size: 17px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1137px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1107px;
     font-size: 16px;
   }
 
-  // 아이폰 11
-  @media (min-height: 880px) {
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 1177px;
     font-size: 17px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1197px;
   }
 
   // 아이폰 12 Pro Max
@@ -506,39 +434,28 @@ const EmphasizeLabel = styled.div`
   left: 50px;
   right: 50px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
-    top: 1052px;
-    font-size: 14px;
+  // 아이폰 5
+  @media (max-width: 330px) {
+    top: 1042px;
+    font-size: 16px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 1192px;
     font-size: 18px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 1232px;
-    font-size: 19px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1192px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1162px;
     font-size: 18px;
   }
 
-  // 아이폰 11
-  @media (min-height: 880px) {
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 1232px;
     font-size: 19px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1252px;
   }
 
   // 아이폰 12 Pro Max
@@ -573,45 +490,34 @@ const ChallengeButton = styled.div`
   left: 44px;
   right: 44px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
-    top: 1105px;
+  // 아이폰 5
+  @media (max-width: 330px) {
+    top: 1080px;
     font-size: 13px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
-    top: 1249px;
-    font-size: 15px;
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
+    top: 1239px;
+    font-size: 18px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 1289px;
-    font-size: 16px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1209px;
+    font-size: 18px;
   }
 
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1249px;
-    font-size: 15px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 1289px;
-    font-size: 16px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1309px;
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 1279px;
+    font-size: 18px;
   }
 
   // 아이폰 12 Pro Max
   @media (min-width: 428px) {
     top: 1319px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   border-radius: 6px;
@@ -646,39 +552,28 @@ const QuestionLabel = styled.div`
   left: 50px;
   right: 50px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
-    top: 1190px;
+  // 아이폰 5
+  @media (max-width: 330px) {
+    top: 1150px;
     font-size: 14px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
-    top: 1334px;
-    font-size: 16px;
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
+    top: 1324px;
+    font-size: 18px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 1374px;
-    font-size: 16px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1290px;
+    font-size: 18px;
   }
 
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1334px;
-    font-size: 16px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 1374px;
-    font-size: 16px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1394px;
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 1354px;
+    font-size: 18px;
   }
 
   // 아이폰 12 Pro Max
@@ -713,39 +608,28 @@ const StoryButton = styled.div`
   left: 44px;
   right: 44px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
-    top: 1250px;
+  // 아이폰 5
+  @media (max-width: 330px) {
+    top: 1215px;
     font-size: 13px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 1406px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 1440px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1376px;
+    font-size: 17px;
+  }
+
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 1430px;
     font-size: 16px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1406px;
-    font-size: 15px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 1446px;
-    font-size: 16px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1466px;
   }
 
   // 아이폰 12 Pro Max
@@ -786,39 +670,28 @@ const ShareLabel = styled.div`
   right: 50px;
   left: 50px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
-    top: 1330px;
+  // 아이폰 5
+  @media (max-width: 330px) {
+    top: 1300px;
     font-size: 14px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 1498px;
     font-size: 16px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 1530px;
-    font-size: 17px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1498px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1468px;
     font-size: 16px;
   }
 
-  // 아이폰 11
-  @media (min-width: 414px) and (max-width: 415px) {
-    top: 1538px;
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 1515px;
     font-size: 17px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1558px;
   }
 
   // 아이폰 12 Pro Max
@@ -849,43 +722,31 @@ const ClipboardButton = styled.img`
   top: 1545px;
   right: 140px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
-    top: 1375px;
+  // 아이폰 5
+  @media (max-width: 330px) {
+    top: 1345px;
     right: 125px;
 
     width: 30px;
     height: 30px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 1545px;
     right: 140px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
-    top: 1585px;
-    right: 160px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1545px;
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1515px;
     right: 140px;
   }
 
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 1585px;
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 1575px;
     right: 160px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1605px;
-    right: 155px;
   }
 
   // 아이폰 12 Pro Max
@@ -905,39 +766,28 @@ const MainButton = styled.div`
   left: 24px;
   right: 24px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
-    top: 1430px;
+  // 아이폰 5
+  @media (max-width: 330px) {
+    top: 1400px;
     font-size: 13px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
     top: 1627px;
     font-size: 15px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 1587px;
+    font-size: 15px;
+  }
+
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 1670px;
     font-size: 16px;
-  }
-
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) and (max-height: 812px) {
-    top: 1627px;
-    font-size: 15px;
-  }
-
-  // 아이폰 11
-  @media (min-height: 880px) {
-    top: 1667px;
-    font-size: 16px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 1687px;
   }
 
   // 아이폰 12 Pro Max
