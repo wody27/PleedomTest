@@ -15,7 +15,7 @@ export default function Page7_2({ match, location }) {
         오늘 저녁 메뉴는 떡볶이~~ <br />
         자자 그럼 필요한게...
       </Box>
-      <StatusBar />
+      <StatusBar section="7" />
     </Wrapper>
   );
 }

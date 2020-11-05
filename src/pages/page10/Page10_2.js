@@ -19,7 +19,7 @@ export default function Page10_2({ match, location }) {
         * GPGP <br />
         (Great Pacific Garbage Patch) <br />
       </Box>
-      <StatusBar />
+      <StatusBar section="10" />
     </Wrapper>
   );
 }

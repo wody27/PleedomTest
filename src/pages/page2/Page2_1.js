@@ -12,7 +12,7 @@ export default function Page2_1({ match, location }) {
       <Background page="2_1" />
       <PageButton pageNumber={match.url} {...{ location }} />
       <Box line="1">어? 저게 뭐지?</Box>
-      <StatusBar />
+      <StatusBar section="2" />
     </Wrapper>
   );
 }

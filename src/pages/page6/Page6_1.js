@@ -15,7 +15,7 @@ export default function Page6_1({ match, location }) {
         분리배출을 열심히 했더니 <br />
         목이 마르네요!
       </Box>
-      <StatusBar />
+      <StatusBar section="6" />
     </Wrapper>
   );
 }

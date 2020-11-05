@@ -12,7 +12,7 @@ export default function Page11_3({ match, location }) {
       <Background page="11_3" />
       <PageButton pageNumber={match.url} {...{ location }} />
       <Box line="1">어? 무슨 소리가 들리는데요?!</Box>
-      <StatusBar />
+      <StatusBar section="11" />
     </Wrapper>
   );
 }

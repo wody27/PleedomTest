@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page8_2({ match, location }) {
   const number = 3;
@@ -56,6 +57,7 @@ export default function Page8_2({ match, location }) {
           당연히 채소는 롤백에 담아 가야한다고 생각해요!
         </Answer>
       </VStack>
+      <StatusBar section="8" />
     </Wrapper>
   );
 }

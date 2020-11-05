@@ -15,7 +15,7 @@ export default function Page8_1({ match, location }) {
         채소 코너에 왔어요! <br />
         마음에 드는 채소를 골라봤습니다!
       </Box>
-      <StatusBar />
+      <StatusBar section="8" />
     </Wrapper>
   );
 }

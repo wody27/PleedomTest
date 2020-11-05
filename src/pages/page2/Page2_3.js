@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page2_3({ match, location }) {
   const number = 1;
@@ -49,6 +50,7 @@ export default function Page2_3({ match, location }) {
           우리 집을 부수는 건 아니겠지?
         </Answer>
       </VStack>
+      <StatusBar section="2" />
     </Wrapper>
   );
 }

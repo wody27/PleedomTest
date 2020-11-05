@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page3_2({ match, location }) {
   const number = 0;
@@ -56,6 +57,7 @@ export default function Page3_2({ match, location }) {
           여러분도 일회용품 자주 쓰시죠?
         </Answer>
       </VStack>
+      <StatusBar section="3" />
     </Wrapper>
   );
 }

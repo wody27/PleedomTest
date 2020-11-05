@@ -15,7 +15,7 @@ export default function Page7_1({ match, location }) {
         나온 김에 마트에서 <br />
         장보고 들어가야겠어요!
       </Box>
-      <StatusBar />
+      <StatusBar section="7" />
     </Wrapper>
   );
 }

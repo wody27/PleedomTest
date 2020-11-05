@@ -1,10 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { statusbar1 } from '../images';
+import {
+  statusbar1,
+  statusbar2,
+  statusbar3,
+  statusbar4,
+  statusbar5,
+  statusbar6,
+  statusbar7,
+  statusbar8,
+  statusbar9,
+  statusbar10,
+} from '../images';
 
-export default function StatusBar() {
-  return <Wrapper src={statusbar1} />;
+export default function StatusBar({ section }) {
+  switch (section) {
+    case '1':
+      return <Wrapper src={statusbar1} />;
+    case '2':
+      return <Wrapper src={statusbar2} />;
+    case '3':
+      return <Wrapper src={statusbar3} />;
+    case '4':
+      return <Wrapper src={statusbar4} />;
+    case '5':
+      return <Wrapper src={statusbar5} />;
+    case '6':
+      return <Wrapper src={statusbar6} />;
+    case '7':
+      return <Wrapper src={statusbar7} />;
+    case '8':
+      return <Wrapper src={statusbar8} />;
+    case '9':
+      return <Wrapper src={statusbar9} />;
+    case '10':
+      return <Wrapper src={statusbar10} />;
+    default:
+      return <Wrapper src={statusbar1} />;
+  }
 }
 
 const Wrapper = styled.img`

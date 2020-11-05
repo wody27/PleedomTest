@@ -15,7 +15,7 @@ export default function Page10_1({ match, location }) {
         휴 집에 도착했어요. <br />
         TV 보면서 저녁 먹어야겠어요.
       </Box>
-      <StatusBar />
+      <StatusBar section="10" />
     </Wrapper>
   );
 }

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page6_3({ match, location }) {
   const number = 2;
@@ -56,6 +57,7 @@ export default function Page6_3({ match, location }) {
           그냥 일회용 컵에 주세요!
         </Answer>
       </VStack>
+      <StatusBar section="6" />
     </Wrapper>
   );
 }

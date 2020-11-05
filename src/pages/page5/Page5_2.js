@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
+import StatusBar from '../../components/StatusBar';
 import { img_box_tape, img_plastic_clean, img_plastic_red, img_pet, img_toothbrush } from '../../images';
 
 export default function Page5_2({ match, location }) {
@@ -63,6 +64,7 @@ export default function Page5_2({ match, location }) {
           <Img src={img_box_tape} alt="card" width="136px" height="117px" />
         </Button>
       </VStack>
+      <StatusBar section="5" />
     </Wrapper>
   );
 }

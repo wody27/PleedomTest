@@ -15,7 +15,7 @@ export default function Page5_1({ match, location }) {
         분리배출 하러 나왔어요! <br />
         시작해볼까요?
       </Box>
-      <StatusBar />
+      <StatusBar section="5" />
     </Wrapper>
   );
 }

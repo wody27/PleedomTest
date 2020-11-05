@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page4_1({ match, location }) {
   const number = 1;
@@ -56,6 +57,7 @@ export default function Page4_1({ match, location }) {
           빠르게 치우는 팁! 비닐에 한 방에 넣어버려요!
         </Answer>
       </VStack>
+      <StatusBar section="4" />
     </Wrapper>
   );
 }

@@ -12,7 +12,7 @@ export default function Page1_1({ match, location }) {
       <Background page="1_1" />
       <PageButton pageNumber={match.url} {...{ location }} />
       <Box line="1">나의 첫 브이로그 시작...</Box>
-      <StatusBar />
+      <StatusBar section="1" />
     </Wrapper>
   );
 }

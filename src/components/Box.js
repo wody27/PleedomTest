@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
   // 더 작은 사이즈들
   @media (max-height: 568px) {
-    ${({ line }) => (line === '7' ? 'top: 360px;' : 'top: 420px;')}
+    ${({ line }) => (line === '7' ? 'top: 360px;' : 'top: 400px;')}
     font-size: 17px;
   }
 

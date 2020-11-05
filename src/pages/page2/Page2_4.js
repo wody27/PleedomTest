@@ -15,7 +15,7 @@ export default function Page2_4({ match, location }) {
         음.. 나중에 알아보고 <br />
         일단 vlog를 시작해볼게요!
       </Box>
-      <StatusBar />
+      <StatusBar section="2" />
     </Wrapper>
   );
 }

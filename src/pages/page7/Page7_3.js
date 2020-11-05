@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page7_3({ match, location }) {
   const number = 3;
@@ -46,6 +47,7 @@ export default function Page7_3({ match, location }) {
           메모장에 적어가야 까먹지 않아요!
         </Answer>
       </VStack>
+      <StatusBar section="7" />
     </Wrapper>
   );
 }

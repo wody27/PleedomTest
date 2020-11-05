@@ -15,7 +15,7 @@ export default function Page1_2({ match, location }) {
         시원한 바람... 따뜻한 햇볕... <br />
         늘어지기 좋은 주말이네요...
       </Box>
-      <StatusBar />
+      <StatusBar section="1" />
     </Wrapper>
   );
 }

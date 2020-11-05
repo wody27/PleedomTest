@@ -15,7 +15,7 @@ export default function Page6_2({ match, location }) {
         근처 카페에 왔어요! <br />
         음료 한 잔 마셔볼까요?
       </Box>
-      <StatusBar />
+      <StatusBar section="6" />
     </Wrapper>
   );
 }

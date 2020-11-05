@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page9_1({ match, location }) {
   const number = 4;
@@ -55,6 +56,7 @@ export default function Page9_1({ match, location }) {
           50원 주고 비닐봉지에 담아가는게 역시 편하죠
         </Answer>
       </VStack>
+      <StatusBar section="9" />
     </Wrapper>
   );
 }

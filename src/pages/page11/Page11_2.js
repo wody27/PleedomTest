@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Background from '../../components/Background';
 import PageButton from '../../components/PageButton';
 import Answer from '../../components/Answer';
+import StatusBar from '../../components/StatusBar';
 
 export default function Page11_2({ match, location }) {
   const number = 0;
@@ -45,6 +46,7 @@ export default function Page11_2({ match, location }) {
           플라스틱 관련 서적과 인터넷을 찾아보며 <br /> 환경에 대해 공부할래요
         </Answer>
       </VStack>
+      <StatusBar section="11" />
     </Wrapper>
   );
 }

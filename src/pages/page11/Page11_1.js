@@ -15,7 +15,7 @@ export default function Page11_1({ match, location }) {
         흠.. 환경 보호를 위해 제가 할 수 <br />
         있는 일을 찾아봐야겠어요!
       </Box>
-      <StatusBar />
+      <StatusBar section="11" />
     </Wrapper>
   );
 }
