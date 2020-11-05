@@ -7,27 +7,28 @@ export default function Box({ line, children }) {
 
 const Wrapper = styled.div`
   position: absolute;
+  top: 649px;
   left: 0;
   right: 0;
 
   // 더 작은 사이즈들
   @media (max-height: 568px) {
-    top: 450px;
+    ${({ line }) => (line === '7' ? 'top: 360px;' : 'top: 450px;')}
   }
 
   // 아이폰 6,7,8,SE 사이즈
   @media (min-height: 569px) and (max-height: 668px) {
-    top: 530px;
+    ${({ line }) => (line === '7' ? 'top: 440px;' : 'top: 530px;')}
   }
 
   // 아이폰 plus 사이즈
   @media (min-height: 669px) and (max-height: 736px) {
-    top: 590px;
+    ${({ line }) => (line === '7' ? 'top: 500px;' : 'top: 590px;')}
   }
 
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) and (max-height: 812px) {
-    top: 649px;
+    ${({ line }) => (line === '7' ? 'top:550px;' : 'top: 649px;')}
   }
 
   margin: 0 30px;

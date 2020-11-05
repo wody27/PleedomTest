@@ -30,7 +30,7 @@ export { default as bg10_3 } from './10-3.png';
 export { default as bg11_1 } from './11-1.png';
 export { default as bg11_2 } from './11-2.png';
 export { default as bg11_3 } from './11-3.png';
-export { default as bg12_1 } from './12.png';
+export { default as bg12_1 } from './12-1.png';
 export { default as photo } from './photo.png';
 export { default as kakaoButton } from './kakao.png';
 export { default as img_card_size } from './img_card_size.png';
