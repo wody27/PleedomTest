@@ -13,19 +13,19 @@ const Wrapper = styled.div`
 
   // 더 작은 사이즈들
   @media (max-height: 568px) {
-    ${({ line }) => (line === '7' ? 'top: 360px;' : 'top: 400px;')}
+    ${({ line }) => (line === '7' ? 'top: 330px;' : 'top: 400px;')}
     font-size: 17px;
   }
 
   // 아이폰 6,7,8,SE 사이즈
   @media (min-height: 569px) and (max-height: 668px) {
-    ${({ line }) => (line === '7' ? 'top: 440px;' : 'top: 500px;')}
+    ${({ line }) => (line === '7' ? 'top: 370px;' : 'top: 470px;')}
     font-size: 20px;
   }
 
   // 아이폰 plus 사이즈
   @media (min-height: 669px) and (max-height: 736px) {
-    ${({ line }) => (line === '7' ? 'top: 500px;' : 'top: 560px;')}
+    ${({ line }) => (line === '7' ? 'top: 430px;' : 'top: 530px;')}
     font-size: 21px;
   }
 
