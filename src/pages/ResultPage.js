@@ -946,7 +946,7 @@ const MainButton = styled.div`
     font-size: 16px;
   }
 
-  margin-bottom: 33px;
+  margin-bottom: 60px;
 
   font-size: 15px;
   font-weight: 600;
