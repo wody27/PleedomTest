@@ -78,9 +78,27 @@ const VStack = styled.div`
   top: 179px;
   left: 25px;
   right: 25px;
-  @media screen and (max-width: 321px) {
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
     top: 150px;
   }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    top: 195px;
+    left: 30px;
+    right: 30px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) {
+  }
+
   z-index: 2;
 `;
 
@@ -88,6 +106,23 @@ const HStack = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
+  }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    margin-bottom: 25px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) {
+  }
 
   z-index: 6;
   margin-bottom: 20px;
@@ -100,10 +135,27 @@ const Button = styled.div`
 
   width: 152px;
   height: 152px;
-  @media screen and (max-width: 321px) {
+
+  // 더 작은 사이즈들
+  @media (max-height: 568px) {
     width: 125px;
     height: 125px;
   }
+
+  // 아이폰 6,7,8,SE 사이즈
+  @media (min-height: 569px) and (max-height: 668px) {
+  }
+
+  // 아이폰 plus 사이즈
+  @media (min-height: 669px) and (max-height: 736px) {
+    width: 165px;
+    height: 165px;
+  }
+
+  // 아이폰 X, XS 사이즈
+  @media (min-height: 737px) {
+  }
+
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(69, 111, 128, 0.08);
 
