@@ -53,6 +53,12 @@ const Img = styled.img`
     left: 140px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1585px;
+    left: 160px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1605px;

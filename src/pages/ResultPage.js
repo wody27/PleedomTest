@@ -177,6 +177,12 @@ const Label = styled.div`
     font-size: 16px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 810px;
+    font-size: 17px;
+  }
+
   font-family: NotoSansCJKkr;
   @font-face {
     font-family: NotoSansCJKkr;
@@ -230,6 +236,11 @@ const ShadowBox = styled.div`
     top: 850px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 890px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 910px;
@@ -269,6 +280,11 @@ const BackgroundPhoto = styled.img`
     top: 850px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 890px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 910px;
@@ -305,6 +321,12 @@ const MissionLabel = styled.div`
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) and (max-height: 812px) {
     top: 920px;
+  }
+
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 960px;
+    font-size: 20px;
   }
 
   // Pixel2 XL 사이즈
@@ -357,6 +379,12 @@ const RandomMission = styled.div`
     font-size: 20px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 998px;
+    font-size: 20px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1018px;
@@ -405,6 +433,12 @@ const DescriptionLabel = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1137px;
     font-size: 16px;
+  }
+
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1177px;
+    font-size: 17px;
   }
 
   // Pixel2 XL 사이즈
@@ -462,6 +496,12 @@ const EmphasizeLabel = styled.div`
     font-size: 18px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1232px;
+    font-size: 19px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1252px;
@@ -515,6 +555,12 @@ const ChallengeButton = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1249px;
     font-size: 15px;
+  }
+
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1289px;
+    font-size: 16px;
   }
 
   // Pixel2 XL 사이즈
@@ -578,6 +624,12 @@ const QuestionLabel = styled.div`
     font-size: 16px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1374px;
+    font-size: 16px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1394px;
@@ -631,6 +683,12 @@ const StoryButton = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1406px;
     font-size: 15px;
+  }
+
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1446px;
+    font-size: 16px;
   }
 
   // Pixel2 XL 사이즈
@@ -694,6 +752,12 @@ const ShareLabel = styled.div`
     font-size: 16px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1538px;
+    font-size: 17px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1558px;
@@ -748,6 +812,12 @@ const ClipboardButton = styled.img`
     right: 140px;
   }
 
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1585px;
+    right: 160px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 1605px;
@@ -787,6 +857,12 @@ const MainButton = styled.div`
   @media (min-height: 737px) and (max-height: 812px) {
     top: 1627px;
     font-size: 15px;
+  }
+
+  // 아이폰 11
+  @media (min-height: 880px) {
+    top: 1667px;
+    font-size: 16px;
   }
 
   // Pixel2 XL 사이즈

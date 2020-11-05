@@ -99,6 +99,12 @@ const VStack = styled.div`
   @media (min-height: 737px) {
   }
 
+  @media (min-height: 880px) {
+    top: 200px;
+    left: 30px;
+    right: 30px;
+  }
+
   // Pixel2 XL 사이즈
   @media (min-width: 411px) and (max-width: 413px) {
     top: 195px;
@@ -161,6 +167,12 @@ const Button = styled.div`
 
   // 아이폰 X, XS 사이즈
   @media (min-height: 737px) {
+  }
+
+  // 아이폰 11
+  @media (min-height: 880px) {
+    width: 160px;
+    height: 160px;
   }
 
   // Moto G4 사이즈
