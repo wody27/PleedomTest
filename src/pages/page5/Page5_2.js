@@ -79,37 +79,31 @@ const VStack = styled.div`
   left: 25px;
   right: 25px;
 
-  // 더 작은 사이즈들
-  @media (max-height: 568px) {
+  // 아이폰 5
+  @media (max-width: 330px) {
     top: 150px;
   }
 
-  // 아이폰 6,7,8,SE 사이즈
-  @media (min-height: 569px) and (max-height: 668px) {
+  // Galaxy S5, Moto G4
+  @media (min-width: 350px) and (max-width: 370px) {
+    // top: 169px;
   }
 
-  // 아이폰 plus 사이즈
-  @media (min-height: 669px) and (max-height: 736px) {
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    // top: 179px;
+  }
+
+  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
     top: 195px;
     left: 30px;
     right: 30px;
   }
 
-  // 아이폰 X, XS 사이즈
-  @media (min-height: 737px) {
-  }
-
-  @media (min-height: 880px) {
-    top: 200px;
-    left: 30px;
-    right: 30px;
-  }
-
-  // Pixel2 XL 사이즈
-  @media (min-width: 411px) and (max-width: 413px) {
-    top: 195px;
-    left: 26px;
-    right: 26px;
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 190px;
   }
 
   z-index: 2;
