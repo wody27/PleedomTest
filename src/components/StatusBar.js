@@ -54,7 +54,7 @@ const Wrapper = styled.img`
 
   // 아이폰 5
   @media (max-width: 330px) {
-    top: 470px;
+    top: 440px;
   }
 
   // Galaxy S5, Moto G4
@@ -64,7 +64,7 @@ const Wrapper = styled.img`
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
-    top: 540px;
+    top: 510px;
   }
 
   // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈

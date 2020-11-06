@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
   // 아이폰 5
   @media (max-width: 330px) {
-    ${({ line }) => (line === '7' ? 'top: 300px;' : 'top: 370px;')}
+    ${({ line }) => (line === '7' ? 'top: 270px;' : 'top: 330px;')}
     font-size: 17px;
   }
 
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
-    ${({ line }) => (line === '7' ? 'top: 340px;' : 'top: 440px;')}
+    ${({ line }) => (line === '7' ? 'top: 310px;' : 'top: 410px;')}
     font-size: 20px;
   }
 
