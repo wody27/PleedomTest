@@ -13,31 +13,31 @@ const Wrapper = styled.div`
 
   // 아이폰 5
   @media (max-width: 330px) {
-    ${({ line }) => (line === '7' ? 'top: 330px;' : 'top: 400px;')}
+    ${({ line }) => (line === '7' ? 'top: 300px;' : 'top: 370px;')}
     font-size: 17px;
   }
 
   // Galaxy S5, Moto G4
   @media (min-width: 350px) and (max-width: 370px) {
-    ${({ line }) => (line === '7' ? 'top: 370px;' : 'top: 470px;')}
+    ${({ line }) => (line === '7' ? 'top: 340px;' : 'top: 440px;')}
     font-size: 20px;
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
-    ${({ line }) => (line === '7' ? 'top: 370px;' : 'top: 470px;')}
+    ${({ line }) => (line === '7' ? 'top: 340px;' : 'top: 440px;')}
     font-size: 20px;
   }
 
   // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
-    ${({ line }) => (line === '7' ? 'top: 420px;' : 'top: 540px;')}
+    ${({ line }) => (line === '7' ? 'top: 390px;' : 'top: 510px;')}
     font-size: 21px;
   }
 
   // 아이폰 12 Pro Max
   @media (min-width: 428px) {
-    ${({ line }) => (line === '7' ? 'top: 570px;' : 'top: 650px;')}
+    ${({ line }) => (line === '7' ? 'top: 540px;' : 'top: 620px;')}
   }
 
   margin: 0 30px;

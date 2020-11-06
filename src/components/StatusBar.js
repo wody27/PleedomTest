@@ -54,27 +54,27 @@ const Wrapper = styled.img`
 
   // 아이폰 5
   @media (max-width: 330px) {
-    top: 500px;
+    top: 470px;
   }
 
   // Galaxy S5, Moto G4
   @media (min-width: 350px) and (max-width: 370px) {
-    top: 570px;
+    top: 540px;
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
-    top: 570px;
+    top: 540px;
   }
 
   // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
-    top: 660px;
+    top: 630px;
   }
 
   // 아이폰 12 Pro Max
   @media (min-width: 428px) {
-    top: 750px;
+    top: 720px;
   }
 
   width: 100%;
