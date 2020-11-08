@@ -118,3 +118,24 @@ export { default as statusbar9 } from './statusbar9.png';
 export { default as statusbar10 } from './statusbar10.png';
 export { default as statusbar11 } from './statusbar11.png';
 export { default as statusbar12 } from './statusbar12.png';
+
+export { default as high1 } from './high01.png';
+export { default as high2 } from './high02.png';
+export { default as high3 } from './high03.png';
+export { default as high4 } from './high04.png';
+export { default as high5 } from './high05.png';
+export { default as high6 } from './high06.png';
+
+export { default as middle1 } from './middle01.png';
+export { default as middle2 } from './middle02.png';
+export { default as middle3 } from './middle03.png';
+export { default as middle4 } from './middle04.png';
+export { default as middle5 } from './middle05.png';
+export { default as middle6 } from './middle06.png';
+
+export { default as low1 } from './low01.png';
+export { default as low2 } from './low02.png';
+export { default as low3 } from './low03.png';
+export { default as low4 } from './low04.png';
+export { default as low5 } from './low05.png';
+export { default as low6 } from './low06.png';

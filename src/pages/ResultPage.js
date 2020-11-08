@@ -6,7 +6,28 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Background from '../components/Background';
 import KakaoShareButton from '../components/KakaoShareButton';
 
-import { photo, btn_share } from '../images';
+import {
+  photo,
+  btn_share,
+  high1,
+  high2,
+  high3,
+  high4,
+  high5,
+  high6,
+  middle1,
+  middle2,
+  middle3,
+  middle4,
+  middle5,
+  middle6,
+  low1,
+  low2,
+  low3,
+  low4,
+  low5,
+  low6,
+} from '../images';
 
 export default function ResultPage({ location }) {
   // 카카오 기능
@@ -55,62 +76,37 @@ export default function ResultPage({ location }) {
       case 10:
       case 9:
       case 8:
-        return highMission[getRandomInt(0, 6)];
+        return <BackgroundPhoto src={highMission[getRandomInt(0, 6)]} alt="cardImg" />;
       case 7:
       case 6:
       case 5:
       case 4:
-        return middleMission[getRandomInt(0, 6)];
+        return <BackgroundPhoto src={middleMission[getRandomInt(0, 6)]} alt="cardImg" />;
       case 3:
       case 2:
       case 1:
       case 0:
-        return lowMission[getRandomInt(0, 6)];
+        return <BackgroundPhoto src={lowMission[getRandomInt(0, 6)]} alt="cardImg" />;
       default:
         return;
     }
   };
-  const highMission = [
-    '‘쓰레기덕질’ 프로그램에 동참해보기',
-    '‘용기를 냅시다’ 챌린지 참여하기',
-    '제로웨이스트 상품을 이용해보기',
-    '리필스테이션을 이용해보기',
-    '환경 관련 마이크로 시위에 참여해보기',
-    '일회용 빨대 대신 다회용 빨대 사용해보기',
-  ];
+  const highMission = [high1, high2, high3, high4, high5, high6];
 
-  const middleMission = [
-    '플로깅 실천해보기',
-    '일회용 비닐봉투 대신 장바구니를 사용해보기',
-    '플라스틱 컵 대신 텀블러 사용해보기',
-    '물티슈를 거절하고 화장실에서 손 씻기',
-    '플라스틱 용품 대신 나무 칫솔, 종이테이프 사용해보기',
-    '매거진 쓸(SSSSL) 구독하기',
-  ];
+  const middleMission = [middle1, middle2, middle3, middle4, middle5, middle6];
 
-  const lowMission = [
-    '요일별 일회용 플라스틱 사용량 적어보기',
-    '배달음식 이용 시 불필요한 일회용품 받지 않기',
-    '과일 알맹이만 구매해보기',
-    '독서를 통해 ‘폐플라스틱’ 문제의 심각성을 느껴보기 ',
-    '종이 박스의 테이프를 떼고 분리배출하기',
-    '깨끗한 플라스틱은 압착하여 부피를 줄여 분리배출하기',
-  ];
+  const lowMission = [low1, low2, low3, low4, low5, low6];
 
   return (
     <Wrapper>
       <Background page={getResultCard()} alt="card" />
-      {/* <ImageCardStoreButton>동물 저장</ImageCardStoreButton> */}
+      <ImageCardStoreButton>동물 저장</ImageCardStoreButton>
+
       <Label>
         ‘작은 행동으로 큰 변화를 이끌어 낼 당신에게.’
         <br />더 나은 지구를 위한 방법, 함께해요!
       </Label>
-      <MissionBox>
-        <BackgroundPhoto src={photo} alt="" />
-        <ShadowBox />
-        <MissionLabel>Mission</MissionLabel>
-        <RandomMission>{getRandomMission()}</RandomMission>
-      </MissionBox>
+      {getRandomMission()}
       <DescriptionLabel>
         맞춤행동을 실천하고 <br />
         인스타그램을 통해 친구들과 공유하면
@@ -141,6 +137,57 @@ export default function ResultPage({ location }) {
 
 const Wrapper = styled.div``;
 
+const ImageCardStoreButton = styled.div`
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  margin: 100px;
+
+  // 더 작은 사이즈들
+  @media (max-width: 330px) {
+    top: 432px;
+    font-size: 13px;
+  }
+
+  // Galaxy S5
+  @media (min-width: 350px) and (max-width: 370px) {
+    top: 500px;
+    font-size: 16px;
+  }
+
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 530px;
+    font-size: 17px;
+  }
+
+  // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 600px;
+    font-size: 17px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 620px;
+    font-size: 17px;
+  }
+
+  border-radius: 8px;
+  border: solid 1px #ffffff;
+  background-color: #2396a7;
+
+  font-family: NotoSansCJKkr;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 54px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+`;
 const Label = styled.div`
   position: absolute;
   top: 759px;
@@ -274,102 +321,6 @@ const BackgroundPhoto = styled.img`
   height: 250px;
   width: 100%;
   opacity: 0.8;
-`;
-
-const MissionLabel = styled.div`
-  position: absolute;
-  top: 920px;
-  left: 50px;
-  right: 50px;
-
-  // 아이폰 5
-  @media (max-width: 330px) {
-    top: 780px;
-  }
-
-  // Galaxy S5, Moto G4
-  @media (min-width: 350px) and (max-width: 370px) {
-    top: 910px;
-  }
-
-  // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
-    top: 890px;
-  }
-
-  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
-  @media (min-width: 404px) and (max-width: 424px) {
-    top: 960px;
-  }
-
-  // 아이폰 12 Pro Max
-  @media (min-width: 428px) {
-    top: 980px;
-  }
-
-  z-index: 4;
-
-  font-family: 'Noto Sans KR', sans-serif !important;
-  @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-  font-size: 16px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #3acce1;
-`;
-
-const RandomMission = styled.div`
-  position: absolute;
-  top: 958px;
-  left: 20px;
-  right: 20px;
-
-  // 아이폰 5
-  @media (max-width: 330px) {
-    top: 818px;
-    font-size: 17px;
-  }
-
-  // Galaxy S5, Moto G4
-  @media (min-width: 350px) and (max-width: 370px) {
-    top: 958px;
-  }
-
-  // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
-    top: 938px;
-    font-size: 20px;
-  }
-
-  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
-  @media (min-width: 404px) and (max-width: 424px) {
-    top: 1020px;
-    font-size: 20px;
-  }
-
-  // 아이폰 12 Pro Max
-  @media (min-width: 428px) {
-    top: 1028px;
-    font-size: 20px;
-  }
-
-  z-index: 4;
-
-  font-family: 'Noto Sans KR', sans-serif !important;
-  @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.45;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
 `;
 
 const DescriptionLabel = styled.div`
