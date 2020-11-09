@@ -7,7 +7,6 @@ import Background from '../components/Background';
 import KakaoShareButton from '../components/KakaoShareButton';
 
 import {
-  photo,
   btn_share,
   high1,
   high2,
@@ -117,7 +116,9 @@ export default function ResultPage({ location }) {
         다른 사람들의 인지-실천 부조화 <br />
         극복 스토리가 궁금하다면?
       </QuestionLabel>
-      <StoryButton>스토리 보러가기</StoryButton>
+      <a href="https://instagram.com/pleedom_?igshid=1xl5s489y8fb9">
+        <StoryButton>스토리 보러가기</StoryButton>
+      </a>
       <ShareLabel>테스트 공유하기</ShareLabel>
       <KakaoButton />
       <CopyToClipboard
@@ -243,46 +244,6 @@ const Label = styled.div`
   letter-spacing: normal;
   text-align: center;
   color: #4c5264;
-`;
-
-const MissionBox = styled.div``;
-const ShadowBox = styled.div`
-  position: absolute;
-  top: 850px;
-  left: 0;
-  right: 0;
-
-  // 아이폰 5
-  @media (max-width: 330px) {
-    top: 720px;
-  }
-
-  // Galaxy S5, Moto G4
-  @media (min-width: 350px) and (max-width: 370px) {
-    top: 850px;
-  }
-
-  // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
-    top: 830px;
-  }
-
-  // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
-  @media (min-width: 404px) and (max-width: 424px) {
-    top: 900px;
-  }
-
-  // 아이폰 12 Pro Max
-  @media (min-width: 428px) {
-    top: 920px;
-  }
-
-  z-index: 3;
-
-  background-color: black;
-  height: 250px;
-  object-fit: contain;
-  opacity: 0.5;
 `;
 
 const BackgroundPhoto = styled.img`
