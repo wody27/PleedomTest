@@ -70,17 +70,37 @@ export default function ResultPage({ location }) {
     console.log(resultMBTI + '_' + scoreString);
     return resultMBTI + '_' + scoreString;
   };
+
   const getRandomMission = () => {
     switch (score) {
       case 10:
       case 9:
       case 8:
-        return <BackgroundPhoto src={highMission[getRandomInt(0, 6)]} alt="cardImg" />;
+        var index = getRandomInt(0, 6);
+        if (index === 0) {
+          return (
+            <a href="https://zero-waste.parti.xyz/">
+              <BackgroundPhoto src={highMission[index]} alt="cardImg" />
+            </a>
+          );
+        } else {
+          return <BackgroundPhoto src={highMission[index]} alt="cardImg" />;
+        }
+
       case 7:
       case 6:
       case 5:
       case 4:
-        return <BackgroundPhoto src={middleMission[getRandomInt(0, 6)]} alt="cardImg" />;
+        var idx = getRandomInt(0, 6);
+        if (idx === 5) {
+          return (
+            <a href=" https://post.naver.com/my.nhn?memberNo=39942840">
+              <BackgroundPhoto src={middleMission[idx]} alt="cardImg" />
+            </a>
+          );
+        } else {
+          return <BackgroundPhoto src={middleMission[idx]} alt="cardImg" />;
+        }
       case 3:
       case 2:
       case 1:
