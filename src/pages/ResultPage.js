@@ -71,6 +71,10 @@ export default function ResultPage({ location }) {
     return resultMBTI + '_' + scoreString;
   };
 
+  const getResult = () => {
+    return mbtiArray.join('');
+  };
+
   const getRandomMission = () => {
     switch (score) {
       case 10:
@@ -119,8 +123,9 @@ export default function ResultPage({ location }) {
   return (
     <Wrapper>
       <Background page={getResultCard()} alt="card" />
-      <ImageCardStoreButton>동물 저장</ImageCardStoreButton>
-
+      <UPLine result={getResult()}></UPLine>
+      <DownloadLabel result={getResult()}>동물 카드를 꾹 눌러 저장하세요!</DownloadLabel>
+      <DownLine result={getResult()}></DownLine>
       <Label>
         ‘작은 행동으로 큰 변화를 이끌어 낼 당신에게.’
         <br />더 나은 지구를 위한 방법, 함께해요!
@@ -158,57 +163,174 @@ export default function ResultPage({ location }) {
 
 const Wrapper = styled.div``;
 
-const ImageCardStoreButton = styled.div`
+const UPLine = styled.div`
   position: absolute;
 
-  left: 0;
-  right: 0;
-  margin: 100px;
+  left: 81px;
+  right: 81px;
+
+  height: 1px;
+
+  z-index: 6;
+
+  ${({ result }) =>
+    result === 'ENFJ' || result === 'ESFJ' || result === 'INTJ'
+      ? 'background-color: #68bbef;'
+      : result === 'ENTP' || result === 'ESFP' || result === 'INFP'
+      ? 'background-color: #919feb;'
+      : result === 'ENFP' || result === 'ESTJ' || result === 'INTP'
+      ? 'background-color: #eab37c;'
+      : result === 'ENTJ' || result === 'INFJ' || result === 'ISFJ'
+      ? 'background-color: #eba3a3;'
+      : 'background-color:#89c484;'}
 
   // 더 작은 사이즈들
   @media (max-width: 330px) {
-    top: 432px;
-    font-size: 13px;
+    top: 540px;
+    width: 180px;
+    left: 70px;
+    right: 70px;
   }
 
   // Galaxy S5
   @media (min-width: 350px) and (max-width: 370px) {
-    top: 500px;
-    font-size: 16px;
+    top: 610px;
+    width: 223px;
+    left: 70px;
+    right: 70px;
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
-    top: 530px;
-    font-size: 17px;
+    top: 630px;
+    width: 213px;
   }
 
   // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
-    top: 600px;
+    top: 700px;
+    width: 253px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 730px;
+  }
+`;
+const DownloadLabel = styled.div`
+  position: absolute;
+
+  left: 81px;
+  right: 81px;
+
+  z-index: 6;
+
+  ${({ result }) =>
+    result === 'ENFJ' || result === 'ESFJ' || result === 'INTJ'
+      ? 'color: #092348;'
+      : result === 'ENTP' || result === 'ESFP' || result === 'INFP'
+      ? 'color: #0d174a;'
+      : result === 'ENFP' || result === 'ESTJ' || result === 'INTP'
+      ? 'color: #4e2a06;'
+      : result === 'ENTJ' || result === 'INFJ' || result === 'ISFJ'
+      ? 'color: #3b061b;'
+      : 'color: #02150a;'}
+
+  // 더 작은 사이즈들
+  @media (max-width: 330px) {
+    top: 550px;
+    font-size: 12px;
+  }
+
+  // Galaxy S5
+  @media (min-width: 350px) and (max-width: 370px) {
+    top: 620px;
+    font-size: 15px;
+  }
+
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 640px;
+    font-size: 15px;
+  }
+
+  // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 710px;
     font-size: 17px;
   }
 
   // 아이폰 12 Pro Max
   @media (min-width: 428px) {
-    top: 620px;
+    top: 740px;
     font-size: 17px;
   }
 
-  border-radius: 8px;
-  border: solid 1px #ffffff;
-  background-color: #2396a7;
-
   font-family: NotoSansCJKkr;
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 15px;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 54px;
+  line-height: 1.47;
   letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
 `;
+
+const DownLine = styled.div`
+  position: absolute;
+
+  left: 81px;
+  right: 81px;
+
+  height: 1px;
+
+  z-index: 6;
+
+  ${({ result }) =>
+    result === 'ENFJ' || result === 'ESFJ' || result === 'INTJ'
+      ? 'background-color: #68bbef;'
+      : result === 'ENTP' || result === 'ESFP' || result === 'INFP'
+      ? 'background-color: #919feb;'
+      : result === 'ENFP' || result === 'ESTJ' || result === 'INTP'
+      ? 'background-color: #eab37c;'
+      : result === 'ENTJ' || result === 'INFJ' || result === 'ISFJ'
+      ? 'background-color: #eba3a3;'
+      : 'background-color:#89c484;'}
+
+  // 더 작은 사이즈들
+  @media (max-width: 330px) {
+    top: 580px;
+    width: 180px;
+    left: 70px;
+    right: 70px;
+  }
+
+  // Galaxy S5
+  @media (min-width: 350px) and (max-width: 370px) {
+    top: 650px;
+    width: 223px;
+    left: 70px;
+    right: 70px;
+  }
+
+  // 아이폰 6,7,8,SE,X,XS 사이즈
+  @media (min-width: 365px) and (max-width: 385px) {
+    top: 670px;
+    width: 213px;
+  }
+
+  // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
+  @media (min-width: 404px) and (max-width: 424px) {
+    top: 740px;
+    width: 253px;
+  }
+
+  // 아이폰 12 Pro Max
+  @media (min-width: 428px) {
+    top: 770px;
+  }
+`;
+
 const Label = styled.div`
   position: absolute;
   top: 759px;
