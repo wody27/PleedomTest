@@ -132,14 +132,16 @@ export default function ResultPage({ location }) {
       </Label>
       {getRandomMission()}
       <DescriptionLabel>
-        맞춤행동을 실천하고 <br />
+        위의 <Color>맞춤행동을 실천하고</Color> <br />
         인스타그램을 통해 친구들과 공유하면
       </DescriptionLabel>
-      <EmphasizeLabel>제로웨이스트 상품을 받을 수 있어!</EmphasizeLabel>
+      <EmphasizeLabel>
+        <Color>제로웨이스트 상품</Color>을 받을 수 있어!
+      </EmphasizeLabel>
       <ChallengeButton>이벤트 참여하기</ChallengeButton>
       <QuestionLabel>
         다른 사람들의 인지-실천 부조화 <br />
-        극복 스토리가 궁금하다면?
+        <Color>극복 스토리</Color>가 궁금하다면?
       </QuestionLabel>
       <a href="https://instagram.com/pleedom_?igshid=1xl5s489y8fb9">
         <StoryButton>스토리 보러가기</StoryButton>
@@ -186,7 +188,7 @@ const UPLine = styled.div`
 
   // 더 작은 사이즈들
   @media (max-width: 330px) {
-    top: 540px;
+    top: 530px;
     width: 180px;
     left: 70px;
     right: 70px;
@@ -194,7 +196,7 @@ const UPLine = styled.div`
 
   // Galaxy S5
   @media (min-width: 350px) and (max-width: 370px) {
-    top: 610px;
+    top: 600px;
     width: 223px;
     left: 70px;
     right: 70px;
@@ -208,7 +210,7 @@ const UPLine = styled.div`
 
   // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
-    top: 700px;
+    top: 695px;
     width: 253px;
   }
 
@@ -238,13 +240,13 @@ const DownloadLabel = styled.div`
 
   // 더 작은 사이즈들
   @media (max-width: 330px) {
-    top: 550px;
+    top: 540px;
     font-size: 12px;
   }
 
   // Galaxy S5
   @media (min-width: 350px) and (max-width: 370px) {
-    top: 620px;
+    top: 610px;
     font-size: 15px;
   }
 
@@ -256,7 +258,7 @@ const DownloadLabel = styled.div`
 
   // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
-    top: 710px;
+    top: 705px;
     font-size: 17px;
   }
 
@@ -299,7 +301,7 @@ const DownLine = styled.div`
 
   // 더 작은 사이즈들
   @media (max-width: 330px) {
-    top: 580px;
+    top: 570px;
     width: 180px;
     left: 70px;
     right: 70px;
@@ -307,7 +309,7 @@ const DownLine = styled.div`
 
   // Galaxy S5
   @media (min-width: 350px) and (max-width: 370px) {
-    top: 650px;
+    top: 640px;
     width: 223px;
     left: 70px;
     right: 70px;
@@ -321,7 +323,7 @@ const DownLine = styled.div`
 
   // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
-    top: 740px;
+    top: 735px;
     width: 253px;
   }
 
@@ -329,6 +331,10 @@ const DownLine = styled.div`
   @media (min-width: 428px) {
     top: 770px;
   }
+`;
+
+const Color = styled.span`
+  color: #3acce1;
 `;
 
 const Label = styled.div`
@@ -467,15 +473,15 @@ const DescriptionLabel = styled.div`
     src: local(NotoSansCJKkr-Regular), url(/path/to/NotoSansCJKkr-Regular.woff2) format('woff2'),
       url(/path/to/NotoSansCJKkr-Regular.woff) format('woff'),
       url(/path/to/NotoSansCJKkr-Regular.ttf) format('truetype');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
   }
 
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
-  font-style: normal;
+  font-style: bold;
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
@@ -491,31 +497,31 @@ const EmphasizeLabel = styled.div`
   // 아이폰 5
   @media (max-width: 330px) {
     top: 1042px;
-    font-size: 16px;
+    font-size: 19px;
   }
 
   // Galaxy S5, Moto G4
   @media (min-width: 350px) and (max-width: 370px) {
     top: 1192px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
     top: 1162px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
     top: 1232px;
-    font-size: 19px;
+    font-size: 21px;
   }
 
   // 아이폰 12 Pro Max
   @media (min-width: 428px) {
     top: 1262px;
-    font-size: 19px;
+    font-size: 21px;
   }
 
   font-family: NotoSansCJKkr;
@@ -524,14 +530,14 @@ const EmphasizeLabel = styled.div`
     src: local(NotoSansCJKkr-Medium), url(/path/to/NotoSansCJKkr-Medium.woff2) format('woff2'),
       url(/path/to/NotoSansCJKkr-Medium.woff) format('woff'), url(/path/to/NotoSansCJKkr-Medium.ttf) format('truetype');
     font-weight: 500;
-    font-style: normal;
+    font-style: bold;
     font-stretch: normal;
   }
 
   font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
-  font-style: normal;
+  font-style: bold;
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
