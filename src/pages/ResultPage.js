@@ -335,6 +335,18 @@ const DownLine = styled.div`
 
 const Color = styled.span`
   color: #3acce1;
+
+  @font-face {
+    font-family: NotoSansCJKkr;
+    src: local(NotoSansCJKkr-Bold), url(/path/to/NotoSansCJKkr-Bold.woff2) format('woff2'),
+      url(/path/to/NotoSansCJKkr-Bold.woff) format('woff'), url(/path/to/NotoSansCJKkr-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+  font-weight: bold;
+  font-family: NotoSansCJKkr-Bold;
 `;
 
 const Label = styled.div`
@@ -473,15 +485,14 @@ const DescriptionLabel = styled.div`
     src: local(NotoSansCJKkr-Regular), url(/path/to/NotoSansCJKkr-Regular.woff2) format('woff2'),
       url(/path/to/NotoSansCJKkr-Regular.woff) format('woff'),
       url(/path/to/NotoSansCJKkr-Regular.ttf) format('truetype');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     font-stretch: normal;
   }
 
   font-size: 16px;
-  font-weight: bold;
   font-stretch: normal;
-  font-style: bold;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
@@ -530,14 +541,14 @@ const EmphasizeLabel = styled.div`
     src: local(NotoSansCJKkr-Medium), url(/path/to/NotoSansCJKkr-Medium.woff2) format('woff2'),
       url(/path/to/NotoSansCJKkr-Medium.woff) format('woff'), url(/path/to/NotoSansCJKkr-Medium.ttf) format('truetype');
     font-weight: 500;
-    font-style: bold;
+    font-style: normal;
     font-stretch: normal;
   }
 
   font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
-  font-style: bold;
+  font-style: normal;
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
