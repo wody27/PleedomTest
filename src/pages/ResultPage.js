@@ -447,19 +447,19 @@ const DescriptionLabel = styled.div`
   // Galaxy S5, Moto G4
   @media (min-width: 350px) and (max-width: 370px) {
     top: 1137px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
     top: 1107px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
     top: 1177px;
-    font-size: 17px;
+    font-size: 16px;
   }
 
   // 아이폰 12 Pro Max
@@ -491,37 +491,37 @@ const DescriptionLabel = styled.div`
 const EmphasizeLabel = styled.div`
   position: absolute;
   top: 1192px;
-  left: 50px;
-  right: 50px;
+  left: 30px;
+  right: 30px;
 
   // 아이폰 5
   @media (max-width: 330px) {
     top: 1042px;
-    font-size: 19px;
+    font-size: 17px;
   }
 
   // Galaxy S5, Moto G4
   @media (min-width: 350px) and (max-width: 370px) {
     top: 1192px;
-    font-size: 20px;
+    font-size: 19px;
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
   @media (min-width: 365px) and (max-width: 385px) {
     top: 1162px;
-    font-size: 20px;
+    font-size: 19px;
   }
 
   // 아이폰 11, plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
     top: 1232px;
-    font-size: 21px;
+    font-size: 20px;
   }
 
   // 아이폰 12 Pro Max
   @media (min-width: 428px) {
     top: 1262px;
-    font-size: 21px;
+    font-size: 19px;
   }
 
   font-family: NotoSansCJKkr;
