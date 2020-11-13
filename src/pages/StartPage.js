@@ -40,8 +40,8 @@ const NextButton = styled.div`
     top: 450px;
   }
 
-  // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  // 아이폰 6,7,8,SE,X,XS,12,mini 사이즈
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 470px;
   }
 
