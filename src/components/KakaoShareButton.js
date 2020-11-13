@@ -42,7 +42,7 @@ const Img = styled.img`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1515px;
     left: 140px;
   }
@@ -62,6 +62,7 @@ const Img = styled.img`
   @media (min-width: 350px) and (max-width: 360px) {
     left: 130px;
   }
+
   width: 40px;
   height: 40px;
 `;

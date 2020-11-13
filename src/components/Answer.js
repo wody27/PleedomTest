@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     font-size: 15px !important;
   }
 

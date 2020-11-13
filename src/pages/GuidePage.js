@@ -59,7 +59,7 @@ const LeftButton = styled.img`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 40px;
     left: 6px;
   }
@@ -96,7 +96,7 @@ const RightButton = styled.img`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 40px;
     right: 6px;
   }

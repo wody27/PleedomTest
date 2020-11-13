@@ -203,7 +203,7 @@ const UPLine = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 630px;
     width: 213px;
   }
@@ -251,7 +251,7 @@ const DownloadLabel = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 640px;
     font-size: 15px;
   }
@@ -316,7 +316,7 @@ const DownLine = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 670px;
     width: 213px;
   }
@@ -373,6 +373,12 @@ const Label = styled.div`
     font-size: 16px;
   }
 
+  // 아이폰 12 사이즈
+  @media (min-width: 386px) and (max-width: 400px) {
+    top: 760px;
+    font-size: 16px;
+  }
+
   // 아이폰 plus 사이즈, Pixel ,Pixel2 XL 사이즈
   @media (min-width: 404px) and (max-width: 424px) {
     top: 820px;
@@ -423,7 +429,7 @@ const BackgroundPhoto = styled.img`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 830px;
   }
 
@@ -463,7 +469,7 @@ const DescriptionLabel = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1107px;
     font-size: 15px;
   }
@@ -518,7 +524,7 @@ const EmphasizeLabel = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1162px;
     font-size: 19px;
   }
@@ -574,7 +580,7 @@ const ChallengeButton = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1209px;
     font-size: 18px;
   }
@@ -636,7 +642,7 @@ const QuestionLabel = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1290px;
     font-size: 18px;
   }
@@ -692,7 +698,7 @@ const StoryButton = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1376px;
     font-size: 17px;
   }
@@ -754,7 +760,7 @@ const ShareLabel = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1468px;
     font-size: 16px;
   }
@@ -809,7 +815,7 @@ const ClipboardButton = styled.img`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1515px;
     right: 140px;
   }
@@ -850,7 +856,7 @@ const MainButton = styled.div`
   }
 
   // 아이폰 6,7,8,SE,X,XS 사이즈
-  @media (min-width: 365px) and (max-width: 385px) {
+  @media (min-width: 365px) and (max-width: 400px) {
     top: 1587px;
     font-size: 15px;
   }
