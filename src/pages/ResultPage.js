@@ -6,6 +6,8 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Background from '../components/Background';
 import KakaoShareButton from '../components/KakaoShareButton';
 
+// G-QZW8QKFJFN
+
 import {
   btn_share,
   high1,
