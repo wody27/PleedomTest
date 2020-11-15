@@ -138,7 +138,9 @@ export default function ResultPage({ location }) {
       <EmphasizeLabel>
         <Color>제로웨이스트 상품</Color>을 받을 수 있어!
       </EmphasizeLabel>
-      <ChallengeButton>이벤트 참여하기</ChallengeButton>
+      <a href="https://www.instagram.com/p/CHfo7Acj4Ik/?igshid=7l6xggekz4fk">
+        <ChallengeButton>이벤트 참여하기</ChallengeButton>
+      </a>
       <QuestionLabel>
         다른 사람들의 인지-실천 부조화 <br />
         <Color>극복 스토리</Color>가 궁금하다면?
