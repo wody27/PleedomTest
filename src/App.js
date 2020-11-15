@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 import ReactGA from 'react-ga';
@@ -41,6 +41,10 @@ import {
 } from './pages';
 
 export default function App() {
+  useEffect(() => {
+    ReactGA.initialize('UA-183063848-2');
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <Fragment>
       <Wrapper>
