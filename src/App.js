@@ -41,10 +41,6 @@ import {
 } from './pages';
 
 export default function App() {
-  useEffect(() => {
-    ReactGA.initialize('UA-183063848-2');
-    ReactGA.pageview(window.location.pathname);
-  }, []);
   return (
     <Fragment>
       <Wrapper>

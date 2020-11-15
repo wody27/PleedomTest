@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import ReactGA from 'react-ga';
 
 import {
   bg_start,
@@ -76,6 +77,12 @@ import {
 } from '../images';
 
 export default function Background({ page }) {
+  useEffect(() => {
+    ReactGA.initialize('UA-183063848-2');
+    ReactGA.pageview(window.location.pathname);
+    console.log(window.location.pathname);
+  }, []);
+
   switch (page) {
     case 'start':
       return <Img src={bg_start} alt="" />;
