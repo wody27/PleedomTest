@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import {
   StartPage,
